@@ -1,0 +1,13 @@
+@import "../../styles/global";
+
+.logo-rotate:hover {
+  transform: rotate(360deg);
+  border: none;
+
+}
+
+.logo-rotate {
+  height: 35px;
+  width: 35px;
+  transition: transform .7s ease-in-out;
+}

@@ -1,0 +1,59 @@
+@import '../../styles/global';
+
+.layerDiv {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .2;
+    z-index: 1;
+    transition-duration: .8s;
+}
+
+.centered {
+    transition-duration: .8s;
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 42%;
+    z-index: 2;
+    opacity: 1;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .onor_outline_btn {
+        font-size: 7pt;
+        // width: 50px;
+    }
+    .onor_btn {
+        font-size: 7pt;
+        padding-left: 2rem;
+    }
+    .p {
+        font-size: small;
+    }
+    .middleOfButtons {
+        display: none;
+    }
+    .dialogBtns {
+        font-size: 9pt;
+        color: red;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
+    .dialogBtns {
+        font-size: 19pt;
+        color: red;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

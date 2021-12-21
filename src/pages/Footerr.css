@@ -1,0 +1,148 @@
+.footer_2_logo {
+  width: 120px;
+  height: 60px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.link_col {
+  font-size: 20px;
+  text-align: left;
+}
+.link_column {
+  text-align: left;
+  display: flex;
+}
+.footer_link {
+  margin-top: 5px;
+  color: white;
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Inter";
+}
+.social_icons {
+  color: white;
+  margin-left: 25px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.footer_icon {
+  color: white;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.footer_icon_text {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #d4d4d4;
+  font-family: "Inter";
+}
+.footer_text {
+  margin-left: 20px;
+  color: #dfdfdf;
+}
+.footer_text_rights {
+  font-size: 14px;
+  color: #d4d4d4;
+}
+.social_icons_mobile {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .footer_link {
+    font-size: 14px;
+  }
+  .footer_icon_text {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .footer_icon {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .social_icons {
+    display: none;
+  }
+  .social_icons_mobile {
+    display: flex;
+    color: white;
+    margin-left: 25px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .footer_text_rights {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-device-width: 305px) {
+  .footer_2_logo {
+    margin-left: 5px;
+  }
+  .footer_link {
+    margin-left: -10px;
+    font-size: 2px;
+  }
+  .footer_icon_text {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .footer_icon {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .social_icons {
+    display: none;
+  }
+  .social_icons_mobile {
+    display: flex;
+    color: white;
+    margin-left: 15px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .footer_text {
+    font-size: 12px;
+  }
+  .footer_text_rights {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .footer_2_logo {
+    margin-left: 5px;
+  }
+  .footer_link {
+    margin-left: -10px;
+    font-size: 14px;
+  }
+  .footer_icon_text {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .footer_icon {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .social_icons {
+    display: none;
+  }
+  .social_icons_mobile {
+    display: flex;
+    color: white;
+    margin-left: 15px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .footer_text {
+    font-size: 12px;
+  }
+  .footer_text_rights {
+    margin-left: 20px;
+  }
+}

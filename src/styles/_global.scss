@@ -1,0 +1,286 @@
+$primary: #fb592e;
+$info: #314244;
+$warning: #f28815;
+$danger: #f44336;
+$success: #74994d;
+$success: hsl(89, 33%, 45%);
+$secondery: #242424;
+$highlightColorDark: #242424;
+$orange: $primary;
+
+// @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+// @import url(https://fonts.googleapis.com/css2?family=Oswald:display=swap);
+// @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:display=swap);
+// @import url(ttps://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+
+$defaultColor: blue;
+$textColor: #fb592e;
+$highlightColor: #fb592e;
+
+* {
+  font-family: "PT Sans Narrow", sans-serif;
+  border: 0px solid black;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin-left: -20px;
+}
+
+@font-face {
+  font-family: "ratyadu";
+  src: url("./fonts/Ratyadu.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mycol {
+  border: 0px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.div_vertical_center {
+  vertical-align: middle;
+}
+
+/* === Buttons === */
+.onor_btn {
+  // font-size: 12px !important;
+  // font-weight: 500 !important;
+  // color: #fff !important;
+  // background: $primary !important;
+  // padding: 10px 35px !important;
+  // border-radius: 3px !important;
+  // text-align: center !important;
+  padding: 5px;
+  float: left !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-weight: 200 !important;
+  border-right: 1px solid $highlightColor !important;
+  border-top: 0.5px solid $highlightColor !important;
+  border-radius: 2px !important;
+  margin-left: 10px;
+  color: $primary !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.testimonials {
+  width: 80%;
+  align-items: center;
+  display: inline-block;
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute;
+  outline: 0;
+  transition: all 0.5s;
+  border-radius: 50%;
+  z-index: 1000;
+  border: 0;
+  background: #fe3308;
+  min-width: 15px;
+  min-height: 7px;
+  opacity: 1;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  align-self: center;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.onor_btn:hover {
+  color: #fff !important;
+  background: $primary !important;
+}
+
+.onor_danger_btn {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  background: $danger !important;
+  padding: 10px 35px !important;
+  border-radius: 3px !important;
+  text-align: center !important;
+}
+
+.onor_danger_btn:hover {
+  color: #fff !important;
+  background: $danger !important;
+}
+
+.onor_success_btn {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  background: $success !important;
+  padding: 10px 35px !important;
+  border-radius: 3px !important;
+  text-align: center !important;
+}
+
+.onor_success_btn:hover {
+  color: #fff !important;
+  background: $success !important;
+}
+
+.onor_secondery_btn {
+  // font-size: 12px !important;
+  // font-weight: 500 !important;
+  // color: #fff !important;
+  // background: $secondery !important;
+  // padding: 10px 35px !important;
+  // border-radius: 3px !important;
+  // text-align: center !important;
+  // border: none !important;
+  padding: 5px;
+  float: left !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-weight: 200 !important;
+  border-right: 1px solid $highlightColorDark !important;
+  border-top: 0.5px solid $highlightColorDark !important;
+  border-radius: 2px !important;
+  margin-left: 10px;
+  color: $secondery !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.onor_secondery_btn:hover {
+  color: #fff !important;
+  background: $secondery !important;
+}
+
+.onor_outline_btn {
+  padding: 10px 40px !important;
+  float: left !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border: 1px solid $primary !important;
+  border-radius: 20px !important;
+  padding: 10px 35px !important;
+  color: $primary !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.onor_outline_btn:hover {
+  border: 1px solid $primary;
+  color: #fff !important;
+  background: $highlightColor !important;
+}
+
+.onor_outline_title_btn_label {
+  text-transform: none !important;
+}
+
+.onor_outline_title_btn {
+  padding: 5px;
+  float: left !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-weight: 200 !important;
+  border-right: 1px solid $highlightColor !important;
+  border-top: 0.5px solid $highlightColor !important;
+  border-radius: 2px !important;
+  margin-left: 10px;
+  color: $primary !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.onor_outline_title_btn:hover {
+  border: 1px solid $primary;
+  color: #fff !important;
+  background: $highlightColor !important;
+}
+
+/* === Buttons End === */
+
+.onor_span_color {
+  color: $primary;
+}
+
+/* === Body Scrollbar === */
+.peopleFromMessages::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+
+.peopleFromMessages::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.peopleFromMessages::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.peopleFromMessages::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+a {
+  color: blue !important;
+}
+
+.glowing {
+  // box-shadow: 0 0 10px rgb(230, 221, 221);
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+}
+
+.smallButton {
+  font-size: 0.8em;
+  padding: 5px 30px;
+  border-radius: 7px;
+  position: relative;
+  bottom: 1px;
+}
+
+.sticky-footer-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* === Body Scrollbar End === */
+
+@import "~bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,30 @@
+@import "../styles/global";
+
+.main-footer {
+  color: black;
+  background-color: white;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 0 8px grey;
+}
+
+.crsr {
+  cursor: pointer;
+}
+
+.footer {
+  // position: absolute;
+  // bottom: 0;
+  // width: 100%;
+  // margin-top: auto;
+  // position: absolute;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+}
+
+.footerImageLogo {
+  filter: brightness(0) invert(1);
+}

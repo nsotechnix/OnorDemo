@@ -1,0 +1,19 @@
+@import '../../styles/global';
+
+.layerDiv {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .2;
+    z-index: 1;
+    // transition-duration: .8s;
+}
+
+.centered {
+    transition-duration: .8s;
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 42%;
+    z-index: 2;
+    opacity: 1;
+}

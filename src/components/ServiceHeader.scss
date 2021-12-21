@@ -1,0 +1,249 @@
+@import "../styles/global";
+
+
+// shadows
+.r-shadow {
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-image:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0),
+      #fe3308,
+    ) 1 100%;
+}
+
+.rb-shadow {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image:
+    linear-gradient(to top,
+      rgba(0, 0, 0, 0),
+      #fe3308,
+    ) 1 100%;
+}
+
+.vertical {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.service_text {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  color: #363636;
+  font-size: 225%;
+  padding-right: 35px;
+}
+
+.service_btn {
+  border-radius: 20px;
+  margin-top: 40px;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.service_parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBtn {
+  padding: 7px 40px !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .service_parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: #363636;
+    font-size: 95%;
+    padding-right: 0px;
+  }
+
+  .service_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(33, 33, 33, 0.2);
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .service_img {
+    width: 80%;
+  }
+
+  .searchBtn {
+    padding: 7px 20px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .service_parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: #363636;
+    font-size: 125%;
+    padding-right: 20px;
+  }
+
+  .service_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(33, 33, 33, 0.2);
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .service_img {
+    width: 80%;
+  }
+
+  .searchBtn {
+    padding: 7px 20px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .service_parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: #363636;
+    font-size: 125%;
+    padding-right: 20px;
+  }
+
+  .service_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(33, 33, 33, 0.2);
+    padding: 25px;
+    margin: 10px;
+  }
+
+  .service_img {
+    width: 50%;
+  }
+
+  .searchBtn {
+    padding: 7px 30px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .service_parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: #363636;
+    font-size: 175%;
+    padding-right: 35px;
+  }
+
+  .service_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(33, 33, 33, 0.2);
+    padding: 30px;
+  }
+
+  .service_img {
+    width: 40%;
+  }
+
+  .searchBtn {
+    padding: 7px 40px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .service_parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service_text {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: #363636;
+    font-size: 200%;
+    padding-right: 35px;
+  }
+
+  .service_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(33, 33, 33, 0.2);
+    padding: 30px;
+    margin-top: -30px;
+  }
+
+  .service_img {
+    width: 40%;
+  }
+
+  .searchBtn {
+    padding: 7px 40px !important;
+  }
+}

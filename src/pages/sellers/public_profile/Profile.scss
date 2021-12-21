@@ -1,0 +1,67 @@
+@import '../../../styles/global';
+
+// div {
+//     border: 1px solid black;
+// }
+
+.mainDiv {
+    box-shadow: 0 0 30px rgb(212, 209, 209);
+    outline: none;
+}
+
+.profile-image {
+    border-radius: 50%;
+    height: 18vw !important;
+    width: 18vw !important;
+}
+
+.title-headers {
+    position: relative;
+    border-bottom: 2px solid $primary;
+}
+
+.title-headers::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid grey;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .main-elements {
+        margin-left: .4em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .main-elements {
+        margin-left: .6em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .main-elements {
+        margin-left: .8em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .main-elements {
+        margin-left: 1em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .main-elements {
+        margin-left: 1.4em;
+    }
+}

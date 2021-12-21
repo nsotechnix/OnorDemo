@@ -1,0 +1,35 @@
+@import '../../styles/global';
+
+.header_h4 {
+    color: $defaultColor;
+}
+
+.selleraccount__text_personalinfo {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+    .headers_h6 {
+        font-size: 10pt;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container, body, img {
+        padding:0;
+        margin:0;
+    }
+}
+

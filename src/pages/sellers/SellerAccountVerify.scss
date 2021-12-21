@@ -1,0 +1,35 @@
+@import '../../styles/global';
+
+.layerDiv {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .2;
+    z-index: 1;
+    transition-duration: .8s;
+}
+
+.centered {
+    transition-duration: .8s;
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 42%;
+    z-index: 2;
+    opacity: 1;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

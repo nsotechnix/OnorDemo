@@ -1,0 +1,48 @@
+@import '../../styles/global.scss';
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "profile profile main main"
+      "description description main main"
+      "description description main main";
+  }
+  
+  .description { grid-area: description; }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "tabs tabs tabs"
+      "gigs gigs gigs"
+      "gigs gigs gigs"
+      "gigs gigs gigs"
+      "gigs gigs gigs";
+    grid-area: main;
+  }
+  
+  .tabs { grid-area: tabs; }
+  
+  .gigs { grid-area: gigs; }
+  
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". image ."
+      "profile-details profile-details profile-details";
+    grid-area: profile;
+  }
+  
+  .image { grid-area: image; }
+  
+  .profile-details { grid-area: profile-details; }
+  

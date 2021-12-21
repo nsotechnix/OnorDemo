@@ -1,0 +1,32 @@
+.imageDivProfile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 0 0 8px 3px #B8B8B8;
+    position: relative;
+}
+
+.imageDivProfile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.imageDivProfile i {
+    position: absolute;
+    top: 20px;
+    right: -7px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    /* padding: 11px; */
+    height: 30px;
+    width: 30px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: orangered;
+    box-shadow: 0 0 8px 3px #B8B8B8;
+}

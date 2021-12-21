@@ -1,0 +1,77 @@
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+    .responsiveImage, .responsiveImage>img {
+        display: block;
+    }
+    .snippets {
+        font-size:14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) { }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { }
+
+@import "../styles/global.scss";
+
+$defaultColor: #FA6331;
+
+.snippets {
+    vertical-align: middle;
+    text-align: left;
+    line-height: 80px;
+    color: $defaultColor;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bolder;
+}
+
+.switchseller__logo_image {
+    width: 50px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.switchseller__image_div {
+    vertical-align: middle;
+    line-height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.videoViewer {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // overflow: hidden
+}
+
+.videoViewer img {
+    flex-shrink: 0;
+    padding: 1em;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.header_h3 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.switchseller__spacer {
+    margin-top: 5em;
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+@import "../styles/global";

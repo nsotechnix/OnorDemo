@@ -1,0 +1,133 @@
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  margin-top: 60px;
+  width: 250px;
+  height: 380px;
+  filter: grayscale(100%);
+  margin-bottom: 30px;
+}
+.slider-text {
+  font-weight: 700;
+  margin-top: 25px;
+}
+.swiper-slide-active {
+  background-position: center;
+  background-size: cover;
+  margin-top: 32px;
+  width: 250px;
+  height: 380px;
+  filter: grayscale(0%);
+  z-index: 9999;
+}
+.swiper_card {
+  height: 350px;
+}
+
+.mySwiper {
+  height: 480px;
+}
+
+@media screen and (max-width: 768px) {
+  .mySwiper {
+    height: 250px;
+    padding-bottom: 50px;
+  }
+}
+
+.rotate-imageone {
+  transform: rotate(3deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imagetwo {
+  transform: rotate(20deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imagethree {
+  transform: rotate(-15deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imagefour {
+  transform: rotate(30deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imagefive {
+  transform: rotate(-10deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imagesix {
+  transform: rotate(10deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imageseven {
+  transform: rotate(-8deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imageeight {
+  transform: rotate(10deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.rotate-imagenine {
+  transform: rotate(-5deg);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 350px;
+    height: auto;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.containerSlider {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  display: block;
+}
+
+.containerSlider .swiper-container {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  // filter: grayscale(100%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

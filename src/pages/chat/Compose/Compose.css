@@ -1,0 +1,92 @@
+.compose {
+  /* padding: 10px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-top: 1px solid #eeeef1;
+  position: fixed;
+  width: calc(100% - 20px); */
+  position: sticky;
+  bottom: 0;
+  margin-bottom: -75px;
+  background-color: white !important;
+  padding-bottom: .5em;
+  padding-top: .2em;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+  .compose {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+  }
+}
+
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.compose-input {
+  flex: 1;
+  border: 1px solid grey;
+  font-size: 14px;
+  height: 45px;
+  background: #f2f2f2;
+  outline: none;
+}
+
+.compose-input::placeholder {
+  opacity: 1;
+}
+
+.attachment {
+  transform: rotate(50deg);
+}
+
+.compose .toolbar-button {
+  color: #bbbbbf;
+  margin-left: 15px;
+}
+
+.compose .toolbar-button:hover {
+  color: #99999c;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .compose-input {
+    width: 25vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .compose-input {
+    width: 26vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .compose-input {
+    width: 26vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .compose-input {
+    width: 35vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .compose-input {
+    width: 37vh;
+  }
+}

@@ -1,0 +1,41 @@
+.feedback {
+  margin: auto 5vw;
+}
+.box-details {
+  text-align: center;
+}
+
+.second_head{
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  h4 {
+    padding-left: 45px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedback {
+    width: 50%;
+    margin: auto 20vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .expert {
+    text-align: center;
+  }
+  h4 {
+    padding-left: 45px;
+  }
+  .beauty_head{
+    text-align: center;
+  }
+  .first_head{
+    font-size: 44px;
+    color: rgb(53, 53, 53);
+  }
+  .second_head{
+    text-align: center;
+    font-size: 20px;
+  }
+}

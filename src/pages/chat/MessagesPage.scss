@@ -1,0 +1,76 @@
+@import '../../styles/global';
+
+.main-container {
+    // box-shadow: 0 0 30px rgb(212, 209, 209);
+    box-shadow: 0 4px 8px -2px rgb(212, 209, 209);
+    // border-radius: 20px;
+}
+
+.message-list-container {
+    padding: 10px;
+    padding-bottom: 70px;
+}
+
+.order-status {
+    border-bottom: 1px solid #bbb8b8;
+    padding-bottom: 5px;
+}
+
+.main-columns {
+    max-height: 480px;
+    overflow: scroll;
+    // overflow-x: hidden;
+}
+
+.scrollerDiv {
+    width: 100%;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .chatPeople {
+        box-shadow: 0 4px 8px -2px rgb(212, 209, 209);
+    }
+    .scrollerDiv {
+        display: flex;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .chatPeople {
+        box-shadow: 0 4px 8px -2px rgb(212, 209, 209);
+    }
+    .scrollerDiv {
+        display: flex;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .chatPeople {
+        box-shadow: none;
+    }
+    .scrollerDiv {
+        display: inline;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .scrollerDiv {
+        display: inline;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .scrollerDiv {
+        display: inline;
+    }
+}

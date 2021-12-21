@@ -1,0 +1,107 @@
+@import '../../styles/global.scss';
+
+.testimonialsCarousel {
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    clear: none;
+}
+
+.leftBtn {
+    // padding: 1px;
+    background-color: $primary;
+    color: white !important;
+    font-family: revicons;
+    font-weight: bolder;
+    width: 30px;
+    z-index: 1;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 50;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 50;
+}
+
+.rightBtn {
+    background-color: $primary;
+    color: white !important;
+    width: 30px;
+    font-family: revicons;
+    font-weight: bolder;
+    z-index: 1;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 50;
+    position: absolute;
+    margin: 0 auto;
+    left: 50;
+    right: 0;
+}
+
+.search-btn-before-login {
+    padding: 11px 50px !important;
+}
+
+.onor-heading {
+    font-size: 23pt !important;
+}
+
+.testimonialsBox {
+    // -webkit-box-shadow: 0 4px 4px rgb(212, 209, 209);
+    // -moz-box-shadow: 0 4px 4px rgb(212, 209, 209);
+    // box-shadow: 0 4px 4px rgb(212, 209, 209);
+    box-shadow: 0 0 30px rgb(212, 209, 209);
+    outline: none;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .search-btn-before-login {
+        padding: 11px 30px !important;
+    }
+
+    .onor-heading {
+        font-size: 19pt !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .search-btn-before-login {
+        padding: 11px 30px !important;
+    }
+
+    .onor-heading {
+        font-size: 19pt;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .search-btn-before-login {
+        padding: 11px 40px !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .search-btn-before-login {
+        padding: 11px 50px !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .search-btn-before-login {
+        padding: 11px 50px !important;
+    }
+}

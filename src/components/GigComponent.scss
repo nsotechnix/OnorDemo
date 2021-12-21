@@ -1,0 +1,158 @@
+@import "../styles/global";
+
+// .parent_card {
+
+// }
+
+// .parent_card :hover {
+//   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2),
+//     1px -1px 2px 1px rgba(254, 51, 8, 0.3);
+// }
+
+// .job-item {
+//   border-top-color: $primary;
+//   border-top-width: 5px;
+//   border-left-color: $primary;
+//   border-left-width: 2px;
+//   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2),
+//     1px -1px 2px 1px rgba(254, 51, 8, 0.3);
+//   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+// }
+
+.rating_value {
+  color: $primary;
+  padding-left: 5px;
+}
+
+.job-item {
+  border-radius: 8%;
+  // background: radial-gradient(
+  //   farthest-corner at 0% 100%,
+  //   $highlightColor 1%,
+  //   white 15%,
+  //   white
+  // );
+}
+
+.job-item:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2), 1px -1px 5px 1px $highlightColor !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .parent_card {
+    padding: 5px;
+  }
+
+  .gig_image {
+    height: 7em;
+  }
+
+  .job-urs-dts {
+    margin-left: .4em;
+  }
+
+  .product-name {
+    font-size: 10pt;
+  }
+
+  .artist-name {
+    font-size: 8pt;
+  }
+
+  .job-item {
+    box-shadow: 0 0 5px rgba(33, 33, 33, 0.2);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .parent_card {
+    padding: 5px;
+  }
+
+  .gig_image {
+    height: 9em;
+  }
+
+  .job-urs-dts {
+    margin-left: .6em;
+  }
+
+  .job-item {
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.2);
+  }
+
+  .artist-name {
+    font-size: 9pt;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .parent_card {
+    padding: 15px;
+  }
+
+  .gig_image {
+    height: 9em;
+  }
+
+  .job-urs-dts {
+    margin-left: .8em;
+  }
+
+  .job-item {
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  }
+
+  .artist-name {
+    font-size: 11pt;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .parent_card {
+    padding: 20px;
+  }
+
+  .gig_image {
+    height: 10em;
+  }
+
+  .job-urs-dts {
+    margin-left: 1em;
+  }
+
+  .job-item {
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  }
+
+  .artist-name {
+    font-size: 11pt;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .parent_card {
+    padding: 20px;
+  }
+
+  .gig_image {
+    height: 10em;
+  }
+
+  .job-urs-dts {
+    margin-left: 1.4em;
+  }
+
+  .job-item {
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  }
+
+  .artist-name {
+    font-size: 11pt;
+  }
+}

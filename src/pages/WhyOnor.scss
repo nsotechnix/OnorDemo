@@ -1,0 +1,138 @@
+.slider-image {
+  margin-top: 30px;
+  max-height: 28em;
+  width: 100%;
+}
+
+.parent {
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  left: 6%;
+  bottom: 3em;
+  height: 100px;
+  width: 250px;
+  // border-radius: 20px;
+}
+
+.image3 {
+  position: absolute;
+  left: 38%;
+  bottom: 3em;
+  height: 100px;
+  width: 250px;
+  // border-radius: 20px;
+}
+
+.image4 {
+  position: absolute;
+  left: 70%;
+  bottom: 3em;
+  height: 100px;
+  width: 250px;
+  // border-radius: 20px;
+}
+
+// .addShadow {
+//   // box-shadow: 2px 3px #433744;
+// }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .parent {
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+  }
+
+  .image2,
+  .image3,
+  .image4 {
+    height: 30px;
+    width: 80px;
+    bottom: 0.4em;
+  }
+  .right-side-content {
+    border: none;
+  }
+  .onor-promise {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .image2,
+  .image3,
+  .image4 {
+    height: 35px;
+    width: 100px;
+    bottom: 0.6em;
+  }
+  .right-side-content {
+    border: none;
+  }
+  .onor-promise {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .image2,
+  .image3,
+  .image4 {
+    height: 40px;
+    width: 120px;
+    bottom: 0.8em;
+  }
+  .right-side-content {
+    border-right: 1px solid grey;
+  }
+  .onor-promise {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .image2,
+  .image3,
+  .image4 {
+    height: 70px;
+    width: 200px;
+    bottom: 1em;
+  }
+  .right-side-content {
+    border-right: 1px solid grey;
+  }
+  .onor-promise {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .image2,
+  .image3,
+  .image4 {
+    height: 80px;
+    width: 250px;
+    bottom: 1em;
+  }
+  .right-side-content {
+    border-right: 1px solid grey;
+  }
+  .onor-promise {
+    display: block;
+  }
+}

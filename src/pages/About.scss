@@ -1,0 +1,125 @@
+.next-generational-text {
+  margin: 2em 0;
+  font-size: 15pt;
+  border-top: 1px solid #f65636;
+  border-bottom: 1px solid #f65636;
+  letter-spacing: 2px;
+}
+
+.about-add-right-border {
+  border-left: 1px solid #f65636;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .next-generational-text {
+    font-size: 8pt;
+  }
+  .second-image-main {
+    display: none;
+  }
+  .second-image-temp {
+    display: block;
+  }
+  .left-side-content {
+    border: none;
+  }
+  .right-side-content {
+    border: none;
+  }
+  .onor-promise {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .next-generational-text {
+    font-size: 15pt;
+  }
+
+  .second-image-main {
+    display: none;
+  }
+  .second-image-temp {
+    display: block;
+  }
+  .left-side-content {
+    border: none;
+  }
+  .right-side-content {
+    border: none;
+  } 
+  .onor-promise {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .next-generational-text {
+    font-size: 15pt;
+  }
+  .second-image-main {
+    display: block;
+  }
+  .second-image-temp {
+    display: none;
+  }
+  .left-side-content {
+    height: 85%;
+    border-left: 1px solid grey;
+  }
+  .right-side-content {
+    border-right: 1px solid grey;
+  }
+  .onor-promise {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .next-generational-text {
+    font-size: 15pt;
+  }
+  .second-image-main {
+    display: block;
+  }
+  .second-image-temp {
+    display: none;
+  }
+  .left-side-content {
+    height: 85%;
+    border-left: 1px solid grey;
+  }
+  .right-side-content {
+    border-right: 1px solid grey;
+  }
+  .onor-promise {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .next-generational-text {
+    font-size: 15pt;
+  }
+  .second-image-main {
+    display: block;
+  }
+  .second-image-temp {
+    display: none;
+  }
+  .left-side-content {
+    height: 85%;
+    border-left: 1px solid grey;
+  }
+  .right-side-content {
+    border-right: 1px solid grey;
+  }
+  .onor-promise {
+    display: block;
+  }
+}

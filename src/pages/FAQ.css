@@ -1,0 +1,40 @@
+.mobile-view{
+    font-family: 'Inter';
+    margin: 50px;
+}
+.accItem{
+    padding: 20px;
+}
+.faqTitle{
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Inter';
+}
+.faqTitle2{
+    font-weight: bold;
+    font-family: 'Inter';
+    font-size: 24px;
+}
+
+@media screen and (max-width:600px){
+    .mobile-view{
+       font-family: 'Inter';
+    }
+    .faqTitle{
+        justify-content: center;
+        text-align: center;
+        font-size: 48px;
+        margin: 30px 0px;
+    }
+    .faqTitle2{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Inter';
+        border: none;
+    }
+    .accItem{
+        padding: 0px;
+    }
+}

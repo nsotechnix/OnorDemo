@@ -1,0 +1,909 @@
+@import "../styles/global";
+@font-face {
+  font-family: "Brush Script MT";
+  src: url(../styles/fonts/BRUSHS.ttf);
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url(../styles/fonts/ClashDisplay.otf);
+}
+@font-face {
+  font-family: "Clash Display Bold";
+  src: url(../styles/fonts/ClashDisplay-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../styles/fonts/Inter.ttf);
+}
+
+// * {
+//   background-color: white;
+// }
+
+/* === Horizontal Scrollbar === */
+.listsSlider::-webkit-scrollbar {
+  height: 4px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;
+  /* width of vertical scrollbar */
+  border: 1px solid #d5d5d5;
+}
+
+/* === Horizontal Scrollbar End === */
+.item {
+  width: 100%;
+  float: left;
+}
+
+// Main Header section
+.m-top {
+  margin-top: 60px;
+}
+
+.main-header {
+  font-family: "Clash Display";
+  text-align: left;
+  margin-left: 96px;
+  margin-top: 80px;
+  font-size: 60px;
+}
+
+.sub-header {
+  font-size: 60px;
+  font-family: "Clash Display";
+}
+
+.main-sub-header {
+  font-family: "Clash Display Bold";
+  font-size: 60px;
+  margin-left: 100px;
+}
+
+.header-text {
+  font-family: "Inter";
+  margin-left: 100px;
+  font-size: 14px;
+  text-align: left;
+  width: 400px;
+}
+
+.header-book-button {
+  margin-left: 100px;
+  font-size: 18px;
+  text-align: left;
+  background: #ea5b28;
+  padding: 16px 32px;
+  box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+  color: white;
+  border-radius: 4px;
+}
+
+.header-book-button:hover {
+  background: #eb4204;
+}
+
+.header-question {
+  font-style: italic;
+  margin-top: 15px;
+  margin-left: 100px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.header-review {
+  color: orange;
+}
+
+.slider-header {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 34px;
+  margin-left: 60px;
+  width: 400px;
+}
+
+.slider-text {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.slider-button-top {
+  margin-top: 200px;
+}
+
+.help-header {
+  font-size: 30px;
+  text-align: left;
+  font-family: "Inter";
+  margin-left: 96px;
+  line-height: 72px;
+  font-weight: 700;
+  margin-top: 150px;
+}
+
+.help-image {
+  width: 90%;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+.help-header-h1 {
+  font-size: 60px;
+  font-family: "Clash Display";
+  margin-left: 15px;
+  margin-top: -20px;
+}
+
+.help-side-image {
+  height: 3em;
+  width: 3em;
+  margin-left: -10px;
+}
+
+.help-round-image {
+  border-radius: 50%;
+  height: 7em;
+  width: 7em;
+  margin-top: 15px;
+  filter: grayscale(100%);
+}
+
+.help-round-image-2 {
+  border-radius: 50%;
+  height: 7em;
+  width: 7em;
+  margin-top: 15px;
+}
+
+.help-round-image-text {
+  font-family: "Inter";
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.help-round-image-text-2 {
+  font-family: "Inter";
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.help-side-image-mobile {
+  display: none;
+  height: 1rem;
+}
+
+.makeup-section-header {
+  font-size: 50px;
+  font-family: "Clash Display";
+  margin-left: 15px;
+  margin-top: -12px;
+}
+
+.makeup-section-image {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.makeup-section-image-2 {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.makeup-side-image {
+  height: 3em;
+  width: 3em;
+}
+.text_trans {
+  font-family: "Brush Script MT";
+  font-weight: bold;
+}
+
+.makeup-upload-button-slider {
+  width: 250px;
+  height: 64px;
+  box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.slider-makeup-text {
+  font-weight: 700;
+}
+
+.makeup-upload-button {
+  margin-left: 80px;
+  width: 250px;
+  height: 64px;
+  box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.booking-btn {
+  display: none;
+}
+
+.slider-division {
+  height: 300px;
+}
+
+// main Header section end
+
+.homepage-images {
+  display: block;
+  margin: auto !important;
+}
+
+.second-image-main {
+  display: none;
+}
+
+.job-item {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  float: left;
+}
+
+.job-item:hover {
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s ease;
+}
+
+.job-top-dt1 {
+  padding: 30px 30px 23px;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.job-center-dt img {
+  width: 110px !important;
+  height: 110px;
+  margin-bottom: 28px;
+  display: inline-block !important;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.job-center-dt {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+.job-urs-dts h6 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+}
+
+.job-urs-dts h6 {
+  font-size: 18px;
+  color: #242424;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 8px !important;
+}
+
+.job-urs-dts span {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.job-urs-dts .avialable {
+  font-size: 14px;
+  color: #fb592e;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.job-urs-dts .c-link {
+  color: #fb592e !important;
+}
+
+.rating-location {
+  float: left;
+  width: 100%;
+  padding: 0 30px 28px;
+}
+
+.left-rating {
+  float: left;
+}
+
+.right-location {
+  float: right;
+}
+
+.right-location span {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  text-align: left;
+}
+
+.borderer {
+  border: 0px solid black;
+}
+
+.right-location span i {
+  font-size: 14px;
+  color: #fb592e;
+  margin-right: 4px;
+}
+
+// .wrapper {
+//   display: flex;
+// }
+
+// .wrapper .dyanmic-texts {
+//   margin-left: 50px;
+//   height: 90px;
+//   line-height: 90px;
+//   overflow: hidden;
+// }
+
+.dyanmic-texts li {
+  list-style: none;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: 120px;
+  }
+}
+
+.dyanmic-texts li span {
+  position: relative;
+}
+
+.dyanmic-texts li span::after {
+  content: "";
+  position: absolute;
+  border-left: 2px solid;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: #e5e5e5;
+  animation: typing 2s steps(20) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+.rtitle {
+  font-size: 14px;
+  color: #242424;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.job-buttons {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+
+.link-btn {
+  width: 100%;
+  float: left;
+}
+
+.link-btn li {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.link-btn .cpy-btn {
+  width: 80% !important;
+}
+
+.link-btn li:last-child {
+  width: 20%;
+  text-align: center;
+  border-right: 0 !important;
+}
+
+.link-btn li:nth-child(2) {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.link-j1 {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #242424;
+  background: #fff;
+  padding: 10px;
+  float: left;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.link-j1:hover {
+  color: #fff !important;
+  background: #fb592e;
+}
+
+.bkd-pm {
+  padding: 10px 0;
+}
+
+.bookmark1 {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  padding: 4px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #757575;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.bookmark1:hover {
+  background: #fb592e;
+  color: #fff !important;
+  border: 1px solid #fb592e;
+}
+
+// new page changes
+
+.homeTestimonials::after {
+  content: "";
+  background: url(../svg/testimonialsBackground.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // opacity: .7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.header-question {
+  color: gray;
+}
+.makeup-section-header {
+  color: black;
+}
+
+.homeTestimonialsOverlay {
+  background: rgba(0, 0, 0, 0.685);
+}
+.section-5-header {
+  margin-top: 50px;
+  font-family: "Inter";
+  font-size: 16px;
+}
+.section-5-header-2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+  width: 40%;
+}
+.section-5-container {
+  margin: 0;
+  padding: 0%;
+  text-align: left;
+}
+.section-5-cards {
+  max-width: 60%;
+}
+.cards-image {
+  height: 372px;
+  width: 215px;
+}
+.parent-section-5-wade {
+  display: block;
+}
+
+.makeup-tip-button {
+  font-size: 18px;
+  text-align: left;
+  background: #ea5b28;
+  padding: 16px 32px;
+  box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+  color: white;
+  border-radius: 4px;
+}
+
+.makeup-tip-button-dark {
+  font-size: 18px;
+  margin-left: 20px;
+  text-align: left;
+  background: #000;
+  padding: 16px 32px;
+  box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+  color: white;
+  border-radius: 4px;
+}
+
+.testimonial-button {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.makeup-tip-text {
+  font-family: "Clash Display";
+  width: 700px;
+  line-height: 88px;
+  font-size: 55px;
+  font-weight: 400px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .reverse-on-smallscreen {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .homepage-images {
+    width: 90% !important;
+    padding: 1em;
+  }
+
+  .second-image-main {
+    display: none;
+  }
+
+  .second-image-temp {
+    display: block;
+  }
+  .main-sub-header {
+    font-size: 35px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .reverse-on-smallscreen {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .second-image-main {
+    display: none;
+  }
+
+  .second-image-temp {
+    display: block;
+  }
+}
+.image-wade {
+  border-radius: 50%;
+}
+.image-wade-col {
+  text-align: left;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .reverse-on-smallscreen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-image-main {
+    display: block;
+  }
+
+  .second-image-temp {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .reverse-on-smallscreen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-image-main {
+    display: block;
+  }
+
+  .second-image-temp {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .reverse-on-smallscreen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-image-main {
+    display: block;
+  }
+
+  .second-image-temp {
+    display: none;
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .main-header {
+    font-family: "Clash Display";
+    text-align: center;
+    font-size: 42px;
+    margin-left: 0px;
+    font-weight: 400px;
+    line-height: 94.04px;
+    margin: 15px 16px 0 16px;
+  }
+
+  .m-top {
+    margin-top: 30px;
+  }
+
+  .main-sub-header {
+    font-family: "Clash Display Bold";
+    margin-left: 0px;
+  }
+
+  .slide-text-center {
+    font-weight: bold;
+    justify-content: center;
+    font-family: "Clash Display Bold";
+  }
+
+  .header-text {
+    font-family: "Inter";
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .header-book-button {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+    background: #ea5b28;
+    padding: 16px 32px;
+    box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .header-question {
+    font-style: italic;
+    margin-top: 15px;
+    margin-left: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .header-review {
+    color: orange;
+    text-align: center;
+  }
+
+  .slider-header {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  .slider-text {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: auto;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    margin-top: 15px;
+  }
+
+  .help-header {
+    font-size: 30px;
+    text-align: left;
+    font-family: "Inter";
+    margin-left: auto;
+    line-height: 72px;
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .help-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+
+  .help-container {
+    justify-content: center;
+  }
+
+  .help-header-h1 {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-left: -25px;
+    font-family: "Clash Display";
+    text-align: center;
+  }
+
+  .help-side-image {
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 100;
+  }
+
+  .help-round-image {
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    margin-top: 15px;
+    filter: grayscale(0%);
+  }
+
+  .arrow-mobile {
+    display: none;
+  }
+
+  .text-container {
+    justify-content: center;
+  }
+
+  .makeup-section-header {
+    font-size: 25px;
+    font-family: "Clash Display";
+    // margin-left: 20px;
+    text-align: center;
+    margin-top: 38px;
+  }
+
+  .makeup-section-image-2 {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .makeup-side-image {
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: 44px;
+  }
+
+  .help-round-image-2 {
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    margin-top: 15px;
+  }
+
+  .upload-btn {
+    margin-top: 40px;
+  }
+
+  .slider-makeup-text {
+    font-weight: normal;
+  }
+
+  .slider-margin-top {
+    margin-top: 350px;
+  }
+
+  .slider-button-top {
+    margin-top: -250px;
+  }
+
+  .slider-button-top button {
+    display: none;
+  }
+
+  .makeup-upload-button {
+    margin-left: 0px;
+    width: 100%;
+    height: 60px;
+    box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+  }
+
+  .booking-btn-up {
+    display: none;
+  }
+
+  .booking-btn {
+    display: block;
+  }
+
+  .slider-division {
+    height: 150px;
+  }
+  .parent-section-5-wade {
+    display: none;
+  }
+  .section-5-header-2 {
+    padding: 0;
+    width: auto;
+    margin: 0;
+  }
+  .testimonial-image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .testimonial-button {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .makeup-tip-text {
+    font-family: "Clash Display";
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 400px;
+  }
+
+  .makeup-tip-button {
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+    background: #ea5b28;
+    padding: 16px 32px;
+    box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+    color: white;
+    border-radius: 4px;
+  }
+
+  .makeup-tip-button-dark {
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background: #000;
+    padding: 16px 32px;
+    box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
+    color: white;
+    border-radius: 4px;
+  }
+}

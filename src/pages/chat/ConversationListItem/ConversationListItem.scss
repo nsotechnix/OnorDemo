@@ -1,0 +1,107 @@
+.conversation-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(190, 186, 186);
+}
+
+.conversation-list-item-small {
+  // display: inline;
+  float: left;
+  // margin: 0 1em 0 0;
+  padding: 1em 1em;
+  // overflow-x: scroll;
+}
+
+.small {}
+
+.selected {
+  background: #f2f2f2;
+}
+
+.conversation-list-item-small:hover {
+  border-bottom: 1px solid rgb(190, 186, 186);
+}
+
+.conversation-list-item:hover,
+.conversation-list-item-small:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.conversation-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.conversation-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.conversation-snippet {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .large {
+    display: block;
+  }
+
+  .small {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .large {
+    display: block;
+  }
+
+  .small {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .large {
+    display: block;
+  }
+
+  .small {
+    display: none;
+  }
+}
