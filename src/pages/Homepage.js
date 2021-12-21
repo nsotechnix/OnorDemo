@@ -350,7 +350,7 @@ let Homepage = (props) => {
                 </span>
               </Col>
             </Col>
-            <Col md={6} className={"d-flex align-items-center"}>
+            <Col md={6} className={"d-flex mt-0 mt-sm-5 align-items-center"}>
               <img
                 src={HomePage1}
                 alt="image"
