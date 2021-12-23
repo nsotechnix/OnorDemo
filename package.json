@@ -61,7 +61,7 @@
     "shave": "^2.5.10",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
-    "swiper": "^7.3.1"
+    "swiper": "^6.8.4"
   },
   "scripts": {
     "start": "react-scripts start",
