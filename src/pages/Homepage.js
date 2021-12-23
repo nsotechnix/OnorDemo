@@ -22,7 +22,7 @@ import dummyImage from "../svg/man.svg";
 import Testimonials from "./homepage/Testimonials";
 import HomePage1 from "../images/homepage12.png";
 import HomePage2 from "../images/beauty_expert.png";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Card, Button } from "react-bootstrap";
 import HeadsetMicIcon from "../svg/headset.svg";
 import SearchIcon from "../svg/triangle.svg";
 import Carousel from "react-multi-carousel";
@@ -58,7 +58,7 @@ import TextTransition, { presets } from "react-text-transition";
 import Session from "../images/session.png";
 import Interactive from "../images/interactive.png";
 import Look from "../images/look.png";
-import Arrow from "../svg/arrow-right.svg";
+import Arrow from "../svg/arrow-right.png";
 import Upload from "../images/upload.png";
 import Analyze from "../images/analyze.png";
 import Report from "../images/report.png";
@@ -80,12 +80,11 @@ import FAQ from "./FAQ";
 import Footer from "./Footer";
 import Footerr from "./Footerr";
 const settings = {
-  className: "center",
   centerMode: true,
   infinite: true,
   centerPadding: "100px",
   slidesToShow: 3,
-  speed: 500,
+  speed: 1000,
 };
 const TEXTS = [
   "Social Media",
@@ -290,12 +289,11 @@ let Homepage = (props) => {
                 {/* Dynamic Text ends */}
                 <br />
                 <p className={"header-text"}>
-                  Book a free live session with Make up Gurus or Simply Upload
-                  your photo for makeup recommedations
+                  Personalized makeup session to get you ready for life
                 </p>
                 <span className={"booking-btn-up"}>
                   <button class={"header-book-button"}>
-                    Book a free live session{" "}
+                    Book a free live consult{" "}
                     <BiVideo
                       style={{
                         backgroundColor: "transparent",
@@ -305,28 +303,28 @@ let Homepage = (props) => {
                     <span className="material-icons"></span>
                   </button>
                   <p className="header-question">
-                    30 mins Highly interactive session- Ask <br /> questions and
-                    get recommendations
+                    1:1 expert consult to analyze your skin & <br /> make
+                    customized recommendations
                   </p>
                   <p className="header-question header-review">
                     <span
-                      style={{ marginLeft: "5px" }}
+                      style={{ marginLeft: "5px", color: "orange" }}
                       class="fa fa-star checked"
                     ></span>
                     <span
-                      style={{ marginLeft: "5px" }}
+                      style={{ marginLeft: "5px", color: "orange" }}
                       class="fa fa-star checked"
                     ></span>
                     <span
-                      style={{ marginLeft: "5px" }}
+                      style={{ marginLeft: "5px", color: "orange" }}
                       class="fa fa-star checked"
                     ></span>
                     <span
-                      style={{ marginLeft: "5px" }}
+                      style={{ marginLeft: "5px", color: "orange" }}
                       class="fa fa-star checked"
                     ></span>
                     <span
-                      style={{ marginLeft: "5px" }}
+                      style={{ marginLeft: "5px", color: "orange" }}
                       class="fa fa-star checked"
                     ></span>
                     <span
@@ -344,13 +342,13 @@ let Homepage = (props) => {
                         color: "gray",
                       }}
                     >
-                      1590 Reviews
+                      100's of reviews
                     </span>
                   </p>
                 </span>
               </Col>
             </Col>
-            <Col md={6} className={"d-flex mt-0 mt-sm-5 align-items-center"}>
+            <Col md={6} className={"d-flex align-items-left mt-0 mt-sm-5"}>
               <img
                 src={HomePage1}
                 alt="image"
@@ -365,14 +363,14 @@ let Homepage = (props) => {
               className={"booking-btn"}
             >
               <button class={"header-book-button"}>
-                Book a free live session{" "}
+                Book a free live consult{" "}
                 <BiVideo
                   style={{ backgroundColor: "transparent", fontSize: "25px" }}
                 />
                 <span className="material-icons"></span>
               </button>
               <p className="header-question">
-                30 mins Highly interactive session- Ask <br /> questions and get
+                1:1 expert consult to analyze your skin & <br /> make customized
                 recommendations
               </p>
               <p className="header-question header-review">
@@ -411,7 +409,7 @@ let Homepage = (props) => {
                     color: "gray",
                   }}
                 >
-                  1590 Reviews
+                  100's of Reviews
                 </span>
               </p>
             </Col>
@@ -420,11 +418,11 @@ let Homepage = (props) => {
           <Row className={"mt-5 mx-md-5"}>
             <Col xs={12}>
               <h1 className={"slider-header"}>
-                Facing any challenges in makeup?
+                A search bar is a drag Just talk to an expert
               </h1>
               <p className={"slider-text"}>
-                No worries, our experts are available with high-quality makeup
-                advice - easily accessible in the comfort of your home.
+                Onor’s certified makeup gurus offers custom recommendation for
+                YOUR needs! Anytime. Anywhere
               </p>
               {/* <img
                 src={Challenge}
@@ -454,7 +452,7 @@ let Homepage = (props) => {
                   }
                   style={{ fontSize: "18px" }}
                 >
-                  Upload your Photos{" "}
+                  Book a free live consult{" "}
                   <BsArrowUpCircle
                     style={{ backgroundColor: "transparent", fontSize: "20px" }}
                   />
@@ -462,7 +460,7 @@ let Homepage = (props) => {
               </Col>
             </Row>
           </Container>
-          <h1 className={"help-header"}>How can we help you</h1>
+          <h1 className={"help-header"}>Our 3 Step Process</h1>
 
           <Row>
             <Col md={6} className={"d-flex"}>
@@ -509,9 +507,9 @@ let Homepage = (props) => {
                     <img className={"help-round-image"} src={Session} />
                     <br />
                     <span class={"help-round-image-text"}>
-                      Book a 30 mins
+                      Book a
                       <br />
-                      free session
+                      free consult
                     </span>
                   </Col>
                   <Col lg={1} className={"arrow-mobile"}>
@@ -530,8 +528,8 @@ let Homepage = (props) => {
                     <img className={"help-round-image"} src={Interactive} />
                     <br />
                     <span class={"help-round-image-text"}>
-                      Highly interactive <br />
-                      session
+                      Get customized <br />
+                      recommendations
                     </span>
                   </Col>
                   <Col lg={1} className={"arrow-mobile"}>
@@ -550,8 +548,8 @@ let Homepage = (props) => {
                     <img className={"help-round-image"} src={Look} />
                     <br />
                     <span class={"help-round-image-text"}>
-                      Get ready for <br />
-                      perfect looks
+                      Buy session for <br />
+                      'your' best look
                     </span>
                   </Col>
                 </Row>
@@ -580,7 +578,7 @@ let Homepage = (props) => {
                       "mt-2 mt-lg-5 mb-0 mb-lg-3 btn btn-primary rounded"
                     }
                   >
-                    Book a free live session{" "}
+                    Book a free live consult{" "}
                     <BiVideo
                       style={{
                         backgroundColor: "transparent",
@@ -606,7 +604,7 @@ let Homepage = (props) => {
                 </span>
                 <span>
                   {" "}
-                  <h1 className={"makeup-section-header"}>
+                  <h1 className={"makeup-section-header2"}>
                     Upload your photo for <br />
                     <span
                       style={{
@@ -656,9 +654,8 @@ let Homepage = (props) => {
                   <Col lg={3} className={"text-center"}>
                     <img className={"help-round-image-2"} src={Analyze} />
                     <br />
-                    <span class={"help-round-image-text-2"}>
-                      AI enabled system will <br />
-                      analyze your face
+                    <span class={"help-round-image-text-2-a"}>
+                      Onor Experts + AI gives custom recommendations
                     </span>
                   </Col>
                   <Col lg={1} className={"arrow-mobile"}>
@@ -718,141 +715,148 @@ let Homepage = (props) => {
           </Container>
         </>
       )}
-      <Container className={"section-5-container"}>
-        <h2 className={"section-5-header"}>1800+ happy customers</h2>
-        <h1 className={"section-5-header-2"}>
-          We're strong believers in the power of word-of-mouth{" "}
-        </h1>
-
-        <HStack
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          flexWrap="wrap"
-        >
-          <Box p="1">
-            <Image w="250px" rounded="10px" src={Feedback1} alt="demo" />
-            <Stack isInline justifyContent="center">
-              <Box as="span">
-                {Array(5)
-                  .fill("")
-                  .map((_, i) => (
-                    <FaStar color="orange" />
-                  ))}
-              </Box>
-              <Text as="p">5.0</Text>
-            </Stack>
-            <Text
-              color="gray.500"
-              fontWeight="semibold"
-              fontSize="14px"
-              width="220px"
-            >
-              It was an great experience with Onor expert. Highly recommed them
-            </Text>
-          </Box>
-
-          <Box p="10">
-            <Image w="250px" rounded="10px" src={Feedback2} alt="demo" />
-            <Stack isInline justifyContent="center">
-              <Box as="span">
-                {Array(5)
-                  .fill("")
-                  .map((_, i) => (
-                    <FaStar color="orange" />
-                  ))}
-              </Box>
-              <Text as="p">5.0</Text>
-            </Stack>
-            <Text
-              color="gray.500"
-              fontWeight="semibold"
-              fontSize="14px"
-              width="220px"
-            >
-              It was an great experience with Onor expert. Highly recommed them
-            </Text>
-          </Box>
-
-          <Box p="10">
-            <Image w="250px" rounded="10px" src={Feedback3} alt="demo" />
-            <Stack isInline justifyContent="center">
-              <Box as="span">
-                {Array(5)
-                  .fill("")
-                  .map((_, i) => (
-                    <FaStar color="orange" />
-                  ))}
-              </Box>
-              <Text as="p">5.0</Text>
-            </Stack>
-            <Text
-              color="gray.500"
-              fontWeight="semibold"
-              fontSize="14px"
-              width="220px"
-            >
-              It was an great experience with Onor expert. Highly recommed them
-            </Text>
-          </Box>
-
-          <Box p="10">
-            <Image w="250px" rounded="10px" src={Feedback4} alt="demo" />
-            <Stack isInline justifyContent="center">
-              <Box as="span">
-                {Array(5)
-                  .fill("")
-                  .map((_, i) => (
-                    <FaStar color="orange" />
-                  ))}
-              </Box>
-              <Text as="p">5.0</Text>
-            </Stack>
-            <Text
-              color="gray.500"
-              fontWeight="semibold"
-              width="220px"
-              fontSize="14px"
-            >
-              It was an great experience with Onor expert. Highly recommed them
-            </Text>
-          </Box>
-        </HStack>
-      </Container>
-      <Container className="mt-4">
-        <Row className="justify-content-center align-items-center">
-          <Col lg={3} xs={4}>
-            <img
-              src={Wade}
-              className="testimonial-image"
-              alt=""
-              style={{ borderRadius: "50%" }}
-            />
-          </Col>
-          <Col>
-            <Row>
-              <Col xs={12} lg={2} className="font-weight-bold">
-                Wade Warren
-              </Col>
-              <Col xs={12} lg={9} className="text-left">
-                <span
-                  style={{
-                    color: "#F6AF25",
-                  }}
-                >
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
+      <Container className={"section-5-container pb-5"} fluid>
+        <Container>
+          <h2 className={"section-5-header"}>1800+ happy customers</h2>
+          <h1 className={"section-5-header-2"}>
+            We're strong believers in the power of word-of-mouth{" "}
+          </h1>
+          <Row className="mt-5">
+            <Col lg={3} md={6} xs={6} className="p-4">
+              <Card className="bg-transparent border-0">
+                <Card.Img variant="top rounded-lg" src={Feedback1} />
+                <Card.Body className="text-center">
                   <span>
-                    <b className="text-dark"> 4.9</b>
+                    {Array(5)
+                      .fill("")
+                      .map((_, i) => (
+                        <FaStar color="#F6AF25" />
+                      ))}
+                    <text className="text-dark"> 5.0</text>
                   </span>
-                </span>
-              </Col>
-            </Row>
-            <Row lg={9} xs={12}>
-              <Col className="mt-2 d-none d-lg-block d-xs-block">
+                  <Card.Text>
+                    It was an great experience with Onor expert. Highly recommed
+                    them
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col lg={3} md={6} xs={6} className="p-4">
+              <Card className="bg-transparent border-0">
+                <Card.Img variant="top rounded-lg" src={Feedback2} />
+                <Card.Body className="text-center">
+                  <span>
+                    {Array(5)
+                      .fill("")
+                      .map((_, i) => (
+                        <FaStar color="#F6AF25" />
+                      ))}
+                    <text className="text-dark"> 5.0</text>
+                  </span>
+                  <Card.Text>
+                    It was an great experience with Onor expert. Highly recommed
+                    them
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col lg={3} md={6} xs={6} className="p-4">
+              <Card className="bg-transparent border-0">
+                <Card.Img variant="top rounded-lg" src={Feedback3} />
+                <Card.Body className="text-center">
+                  <span>
+                    {Array(5)
+                      .fill("")
+                      .map((_, i) => (
+                        <FaStar color="#F6AF25" />
+                      ))}
+                    <text className="text-dark"> 5.0</text>
+                  </span>
+                  <Card.Text>
+                    It was an great experience with Onor expert. Highly recommed
+                    them
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col lg={3} md={6} xs={6} className="p-4">
+              <Card className="bg-transparent border-0">
+                <Card.Img variant="top rounded-lg" src={Feedback4} />
+                <Card.Body className="text-center">
+                  <span>
+                    {Array(5)
+                      .fill("")
+                      .map((_, i) => (
+                        <FaStar color="#F6AF25" />
+                      ))}
+                    <text className="text-dark"> 5.0</text>
+                  </span>
+                  <Card.Text>
+                    It was an great experience with Onor expert. Highly recommed
+                    them
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container
+        fluid
+        style={{
+          backgroundColor: "rgba(241, 90, 37, 0.04)",
+          paddingBottom: "80px",
+        }}
+      >
+        <Container>
+          <Row className="justify-content-center align-items-center">
+            <Col lg={3} xs={4}>
+              <img
+                src={Wade}
+                className="testimonial-image"
+                alt=""
+                style={{ borderRadius: "50%" }}
+              />
+            </Col>
+            <Col>
+              <Row>
+                <Col xs={12} lg={2} className="font-weight-bold">
+                  Wade Warren
+                </Col>
+                <Col xs={12} lg={9} className="text-left">
+                  <span
+                    style={{
+                      color: "#F6AF25",
+                    }}
+                  >
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span>
+                      <b className="text-dark"> 4.9</b>
+                    </span>
+                  </span>
+                </Col>
+              </Row>
+              <Row lg={9} xs={12}>
+                <Col className="mt-2 d-none d-lg-block d-xs-block">
+                  <span style={{ color: "#000" }}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pulvinar enim diam tortor feugiat massa. A ultricies feugiat
+                    diam consectetur blandit turpis id egestas est. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Pulvinar enim
+                    diam tortor feugiat massa.
+                  </span>
+                </Col>
+              </Row>
+            </Col>
+            <Row lg={9} xs={12} className="d-block px-3 py-2 d-lg-none">
+              <Col>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pulvinar enim diam tortor feugiat massa. A ultricies feugiat
                 diam consectetur blandit turpis id egestas est. Lorem ipsum
@@ -860,53 +864,45 @@ let Homepage = (props) => {
                 tortor feugiat massa.
               </Col>
             </Row>
-          </Col>
-          <Row lg={9} xs={12} className="d-block px-3 py-2 d-lg-none">
-            <Col>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-              enim diam tortor feugiat massa. A ultricies feugiat diam
-              consectetur blandit turpis id egestas est. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Pulvinar enim diam tortor
-              feugiat massa.
+          </Row>
+          <Row className="text-right">
+            <Col lg={12}>
+              <button className="testimonial-button">
+                View our review wall{" "}
+                <FiArrowRight style={{ fontSize: "18px" }} />
+              </button>
             </Col>
           </Row>
-        </Row>
-        <Row className="text-right">
-          <Col lg={12}>
-            <button className="testimonial-button">
-              View our review wall <FiArrowRight style={{ fontSize: "18px" }} />
-            </button>
+          <Col className="mt-4">
+            <h1 className="makeup-tip-text">
+              Want to Get similar top quality makeup tips and suggestions?
+            </h1>
+            <span>
+              <button class={"makeup-tip-button"}>
+                Book a free live session{" "}
+                <BiVideo
+                  style={{ backgroundColor: "transparent", fontSize: "25px" }}
+                />
+                <span className="material-icons"></span>
+              </button>
+              <button
+                onClick={(e) =>
+                  window.open(
+                    "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
+                    "_blank"
+                  )
+                }
+                className={"makeup-tip-button-dark"}
+                style={{ fontSize: "18px" }}
+              >
+                Upload your Photos{" "}
+                <BsArrowUpCircle
+                  style={{ backgroundColor: "transparent", fontSize: "20px" }}
+                />
+              </button>
+            </span>
           </Col>
-        </Row>
-        <Col className="mt-4">
-          <h1 className="makeup-tip-text">
-            Want to Get similar top quality makeup tips and suggestions?
-          </h1>
-          <span>
-            <button class={"makeup-tip-button"}>
-              Book a free live session{" "}
-              <BiVideo
-                style={{ backgroundColor: "transparent", fontSize: "25px" }}
-              />
-              <span className="material-icons"></span>
-            </button>
-            <button
-              onClick={(e) =>
-                window.open(
-                  "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
-                  "_blank"
-                )
-              }
-              className={"makeup-tip-button-dark"}
-              style={{ fontSize: "18px" }}
-            >
-              Upload your Photos{" "}
-              <BsArrowUpCircle
-                style={{ backgroundColor: "transparent", fontSize: "20px" }}
-              />
-            </button>
-          </span>
-        </Col>
+        </Container>
       </Container>
 
       {/* Section 7*/}

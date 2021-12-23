@@ -1,40 +1,58 @@
-.mobile-view{
-    font-family: 'Inter';
-    margin: 50px;
-}
-.accItem{
-    padding: 20px;
-}
-.faqTitle{
-    font-weight: bold;
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #333333;
-    font-family: 'Inter';
-}
-.faqTitle2{
-    font-weight: bold;
-    font-family: 'Inter';
-    font-size: 24px;
+.faq-main-title {
+    font-size: 44px;
+    font-weight: 700;
 }
 
-@media screen and (max-width:600px){
-    .mobile-view{
-       font-family: 'Inter';
-    }
-    .faqTitle{
-        justify-content: center;
+.accordion-btn {
+    padding: 15px 58px 15px 58px;
+    background-color: rgba(241, 90, 37, 0.04);
+}
+
+.faq-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.btn-icon {
+    font-size: 23px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.accordion-content {
+    font-size: 16px;
+    font-weight: 400px;
+    padding: 20px 58px 10px 58px;
+    background-color: rgba(241, 90, 37, 0.04);
+}
+
+@media screen and (max-width:768px) {
+
+    .faq-main-title {
+        font-size: 35px;
         text-align: center;
-        font-size: 48px;
-        margin: 30px 0px;
+        font-weight: 700;
     }
-    .faqTitle2{
-        font-size: 20px;
-        font-weight: bold;
+
+    .accordion-btn {
+        padding: 10px 8px 10px 8px;
+        background-color: rgba(241, 90, 37, 0.04);
+    }
+
+    .faq-title {
         font-family: 'Inter';
-        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
     }
-    .accItem{
-        padding: 0px;
+
+    .accordion-content {
+        font-size: 16px;
+        font-weight: 400px;
+        padding: 20px 8px 10px 8px;
+        background-color: rgba(241, 90, 37, 0.04);
     }
 }

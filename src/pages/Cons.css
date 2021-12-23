@@ -1,12 +1,26 @@
-span{
-    color: orangered;
+.why-onor-header {
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.HStack{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+.why-onor-img {
+  height: 100%;
+  width: 100%;
+}
+
+.why-onor-icon {
+  font-size: 30px;
+}
+
+.why-onor-text {
+  font-size: 24px;
+}
+
+
+@media screen and (max-width:678px) {
+  .why-onor-header {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
 }

@@ -1,11 +1,13 @@
 .tipstemplate {
   text-align: center;
 }
+
 .tabs {
   justify-content: center;
   padding: 10px;
   margin-left: -40%;
 }
+
 .tab {
   border-radius: 5px;
   border: none;
@@ -16,20 +18,30 @@
   padding: 15px;
   cursor: pointer;
 }
+
+.mytabs {
+  background-color: gray;
+  font-family: "Clash Display Bold";
+}
+
 .tab:focus {
   background-color: #ffd6c9;
 }
+
 .head {
   font-style: italic;
 }
+
 .head3 {
   margin-top: -38px;
 }
+
 .texts {
   color: gray;
   height: 80px;
   padding: 0px 20px;
 }
+
 .tips {
   margin-top: 80px;
   font-family: "Inter";
@@ -37,6 +49,7 @@
   font-size: 46px;
   margin-left: -50%;
 }
+
 .bulbIcon {
   font-size: 50px;
   padding: 3px;
@@ -45,10 +58,12 @@
   color: white;
   margin-left: 86%;
 }
+
 .sharebtn {
   justify-content: center;
   padding-bottom: 20px;
 }
+
 .hstack {
   margin-top: 40px;
   justify-content: center;
@@ -96,28 +111,35 @@
     justify-content: center;
     margin-left: 0;
   }
+
   .quote {
     display: none;
   }
+
   .boxspace {
     margin: -10px 0px;
   }
+
   .boxspace4 {
     margin-top: 40px;
   }
+
   .head3 {
     margin-top: 10px;
   }
+
   .tips {
     font-family: "Inter";
     font-weight: bolder;
     font-size: 40px;
     margin-left: 0;
   }
+
   .tab {
     font-size: 18px;
     font-family: "Inter";
   }
+
   /* .hstack{
     margin-left: 60px;
   } */

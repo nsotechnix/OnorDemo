@@ -9,7 +9,7 @@ function Footer() {
     <Container fluid>
       <Row>
         <Col className="footer_parent" md={12}>
-          <h1 className="footer_text_heading">
+          <h1 className="footer_text_heading_1">
             Lets glow your skin and give you perfect make up
           </h1>
           <Col className="btn_class_footer">
@@ -19,13 +19,18 @@ function Footer() {
                 style={{
                   backgroundColor: "transparent",
                   fontSize: "25px",
+                  marginLeft: "10px",
                 }}
               />
             </button>
             <button className="button-black">
               Upload your photo
               <BsArrowUpCircle
-                style={{ backgroundColor: "transparent", fontSize: "20px" }}
+                style={{
+                  backgroundColor: "transparent",
+                  fontSize: "20px",
+                  marginLeft: "10px",
+                }}
               />
             </button>
           </Col>

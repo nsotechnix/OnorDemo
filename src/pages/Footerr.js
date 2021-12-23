@@ -27,7 +27,7 @@ function Footerr() {
           <FaTwitter className="social_icons" />
           <FaInstagram className="social_icons" />
         </Col>
-        <Col style={{ display: "flex" }} md={12}>
+        <Col style={{ display: "flex", marginTop: "20px" }} md={12}>
           <IoCallOutline className="footer_icon" />{" "}
           <p className="footer_icon_text">(240) 883-7445</p>
           <AiOutlineMail className="footer_icon" />{" "}
@@ -37,12 +37,12 @@ function Footerr() {
         </Col>
       </Row>
       <Row>
-        <Col style={{ display: "flex" }} md={12}>
+        <Col style={{ display: "flex", marginTop: "20px" }} md={12}>
           <FaFacebookF className="social_icons_mobile" />
           <FaTwitter className="social_icons_mobile" />
           <FaInstagram className="social_icons_mobile" />
         </Col>
-        <Col style={{ display: "flex" }} md={10}>
+        <Col style={{ display: "flex", marginBottom: "40px" }} md={10}>
           <p className="footer_text">Privacy Policy </p>
           <p className="footer_text"> Terms & Conditions</p>
           <p className="footer_text"> Conduct & Dispute resolution</p>

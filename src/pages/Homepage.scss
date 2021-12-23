@@ -17,6 +17,11 @@
   src: url(../styles/fonts/Inter.ttf);
 }
 
+@font-face {
+  font-family: "Inter Bold";
+  src: url(../styles/fonts/Inter-Bold.ttf);
+}
+
 // * {
 //   background-color: white;
 // }
@@ -96,8 +101,7 @@
 }
 
 .slider-header {
-  font-family: "Inter";
-  font-weight: bold;
+  font-family: "Inter Bold";
   font-size: 34px;
   margin-left: 60px;
   width: 400px;
@@ -126,7 +130,7 @@
 }
 
 .help-image {
-  width: 90%;
+  width: 85%;
   margin-left: 80px;
   border-radius: 10px;
 }
@@ -145,17 +149,18 @@
 }
 
 .help-round-image {
+  text-align: left;
   border-radius: 50%;
-  height: 7em;
-  width: 7em;
+  height: 5em;
+  width: 5em;
   margin-top: 15px;
   filter: grayscale(100%);
 }
 
 .help-round-image-2 {
   border-radius: 50%;
-  height: 7em;
-  width: 7em;
+  height: 5em;
+  width: 5em;
   margin-top: 15px;
 }
 
@@ -174,17 +179,29 @@
   font-size: 12px;
   line-height: 15px;
 }
-
+.help-round-image-text-2-a {
+  font-family: "Inter";
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+}
 .help-side-image-mobile {
   display: none;
   height: 1rem;
 }
 
 .makeup-section-header {
+  font-size: 60px;
+  font-family: "Clash Display";
+  margin-left: 15px;
+  margin-top: -14px;
+}
+.makeup-section-header2 {
+  color: #000;
   font-size: 50px;
   font-family: "Clash Display";
   margin-left: 15px;
-  margin-top: -12px;
+  margin-top: -14px;
 }
 
 .makeup-section-image {
@@ -193,13 +210,13 @@
 }
 
 .makeup-section-image-2 {
-  width: 90%;
+  width: 85%;
   border-radius: 10px;
 }
 
 .makeup-side-image {
-  height: 3em;
-  width: 3em;
+  height: 2.5em;
+  width: 2.5em;
 }
 .text_trans {
   font-family: "Brush Script MT";
@@ -497,19 +514,21 @@
   background: rgba(0, 0, 0, 0.685);
 }
 .section-5-header {
+  padding-top: 30px;
   margin-top: 50px;
   font-family: "Inter";
   font-size: 16px;
 }
 .section-5-header-2 {
-  font-family: "Inter";
+  margin-top: 30px;
+  font-family: "Inter Bold";
   font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
+  font-size: 44px;
   line-height: 48px;
-  width: 40%;
+  width: 70%;
 }
 .section-5-container {
+  background-color: rgba(241, 90, 37, 0.04);
   margin: 0;
   padding: 0%;
   text-align: left;
@@ -544,6 +563,7 @@
   box-shadow: 7px 6px 0px rgba(0, 0, 0, 0.12);
   color: white;
   border-radius: 4px;
+  padding-bottom: 20px;
 }
 
 .testimonial-button {
@@ -559,7 +579,9 @@
   font-size: 55px;
   font-weight: 400px;
 }
-
+.testimonial-image {
+  margin-left: 30px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .reverse-on-smallscreen {
@@ -581,6 +603,10 @@
   }
   .main-sub-header {
     font-size: 35px;
+  }
+  .makeup-section-header2 {
+    font-size: 30px;
+    margin-top: 40px;
   }
 }
 
@@ -716,7 +742,6 @@
 
   .slider-header {
     font-family: "Inter";
-    font-weight: bold;
     font-size: 24px;
     text-align: center;
     margin-left: auto;
@@ -771,8 +796,8 @@
 
   .help-round-image {
     border-radius: 50%;
-    height: 5em;
-    width: 5em;
+    height: 4em;
+    width: 4em;
     margin-top: 15px;
     filter: grayscale(0%);
   }
@@ -857,8 +882,10 @@
     padding: 0;
     width: auto;
     margin: 0;
+    font-size: 25px;
   }
   .testimonial-image {
+    margin: 0;
     height: 100px;
     width: 100px;
   }

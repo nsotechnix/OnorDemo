@@ -45,15 +45,12 @@ export default function Slider() {
       >
         <SwiperSlide className="swiper_card">
           <img src={SliderImageOne} className="rotate-imageone" />
-          <p className="slider-text">My name first slider</p>
         </SwiperSlide>
         <SwiperSlide className="swiper_card">
           <img src={SliderImageTwo} className="rotate-imagetwo" />
-          <p className="slider-text"> My name second slider</p>
         </SwiperSlide>
         <SwiperSlide className="swiper_card">
           <img src={SliderImageThree} className="rotate-imagethree" />
-          <p className="slider-text">My name first slider</p>
         </SwiperSlide>
         <SwiperSlide className="swiper_card">
           <img src={SliderImageFour} className="rotate-imagefour" />
