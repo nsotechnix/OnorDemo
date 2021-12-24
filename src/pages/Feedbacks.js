@@ -31,10 +31,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp1} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)
@@ -55,10 +55,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp2} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)
@@ -79,10 +79,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp3} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)
@@ -103,10 +103,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp4} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)
@@ -127,10 +127,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp5} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)
@@ -151,10 +151,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp6} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)
@@ -175,10 +175,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp7} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)
@@ -199,10 +199,10 @@ function Feedbacks() {
           <Card.Img variant="top" src={exp8} />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title className="card_title">
-              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '20px' }}>Maria Reva</h3>
-              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '16px' }}>CIDESCO Diploma<br />
+              <h3 style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '18px' }}>Maria Reva</h3>
+              <p style={{ color: 'gray', fontFamily: 'Inter', fontSize: '14px' }}>CIDESCO Diploma<br />
                 8+ years experience</p>
-              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '14px' }}>134 Sessions on Onor World</p>
+              <p style={{ fontWeight: 'bold', fontFamily: 'Inter', fontSize: '12px' }}>134 Sessions on Onor World</p>
               <p>
                 <span>
                   {Array(5)

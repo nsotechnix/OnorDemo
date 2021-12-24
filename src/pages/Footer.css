@@ -5,6 +5,7 @@
 
 .footer_parent {
   background-image: url("../images/footer.png");
+  background-size: cover;
   height: 470px;
 }
 .footer_text_heading_1 {

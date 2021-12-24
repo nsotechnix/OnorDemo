@@ -11,3 +11,21 @@
   width: 35px;
   transition: transform .7s ease-in-out;
 }
+
+.logo-app {
+  margin-left: 30px;
+}
+
+.nav-buttons {
+  margin-right: 30px;
+}
+
+@media screen and (max-width:768px) {
+  .logo-app {
+    margin-left: -30px;
+  }
+
+  .nav-buttons {
+    margin-right: 0px;
+  }
+}

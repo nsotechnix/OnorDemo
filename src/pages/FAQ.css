@@ -5,7 +5,7 @@
 
 .accordion-btn {
     padding: 15px 58px 15px 58px;
-    background-color: rgba(241, 90, 37, 0.04);
+    background-color: rgba(222, 222, 222, 0.2);
 }
 
 .faq-title {
@@ -26,7 +26,7 @@
     font-size: 16px;
     font-weight: 400px;
     padding: 20px 58px 10px 58px;
-    background-color: rgba(241, 90, 37, 0.04);
+    background-color: rgba(222, 222, 222, 0.2);
 }
 
 @media screen and (max-width:768px) {
@@ -39,7 +39,7 @@
 
     .accordion-btn {
         padding: 10px 8px 10px 8px;
-        background-color: rgba(241, 90, 37, 0.04);
+        background-color: rgba(222, 222, 222, 0.2);
     }
 
     .faq-title {
@@ -53,6 +53,6 @@
         font-size: 16px;
         font-weight: 400px;
         padding: 20px 8px 10px 8px;
-        background-color: rgba(241, 90, 37, 0.04);
+        background-color: rgba(222, 222, 222, 0.2);
     }
 }

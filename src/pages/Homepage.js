@@ -85,6 +85,7 @@ const settings = {
   centerPadding: "100px",
   slidesToShow: 3,
   speed: 1000,
+  fontFamily: "Clash Display Bold",
 };
 const TEXTS = [
   "Social Media",
@@ -279,9 +280,9 @@ let Homepage = (props) => {
                   <Row className="slide-text-center">
                     <h1 className={"main-sub-header"}>
                       <TextTransition
-                        className="text_trans"
+                        className="text-trans"
                         text={TEXTS[index % TEXTS.length]}
-                        springConfig={presets.gentle}
+                        springConfig={presets.slow}
                       />
                     </h1>
                   </Row>
@@ -297,7 +298,7 @@ let Homepage = (props) => {
                     <BiVideo
                       style={{
                         backgroundColor: "transparent",
-                        fontSize: "25px",
+                        fontSize: "28px",
                       }}
                     />
                     <span className="material-icons"></span>
@@ -563,10 +564,12 @@ let Homepage = (props) => {
                     style={{
                       padding: "11px 50px",
                       marginLeft: "20px",
-                      fontSize: "18px",
+                      fontSize: "14px",
                       boxShadow: "7px 6px 0px rgba(0, 0, 0, 0.12)",
                       borderRadius: "4px",
                       height: "64px",
+                      fontFamily: "Inter",
+                      fontWeight: "700",
                     }}
                     onClick={(e) =>
                       window.open(
@@ -691,7 +694,12 @@ let Homepage = (props) => {
                   className={
                     "mt-2 mt-lg-5 mb-0 mb-lg-3 btn btn-dark makeup-upload-button"
                   }
-                  style={{ fontSize: "18px" }}
+                  style={{
+                    fontSize: "14px",
+                    fontFamily: "Inter",
+                    backgroundColor: "#000000",
+                    fontWeight: "700",
+                  }}
                 >
                   Upload your Photos{" "}
                   <BsArrowUpCircle
@@ -716,17 +724,29 @@ let Homepage = (props) => {
         </>
       )}
       <Container className={"section-5-container pb-5"} fluid>
-        <Container>
+        <Container style={{ background: "none" }}>
           <h2 className={"section-5-header"}>1800+ happy customers</h2>
           <h1 className={"section-5-header-2"}>
             We're strong believers in the power of word-of-mouth{" "}
           </h1>
-          <Row className="mt-5">
-            <Col lg={3} md={6} xs={6} className="p-4">
-              <Card className="bg-transparent border-0">
+          <Row style={{ background: "none" }} className="mt-5">
+            <Col
+              style={{ background: "none" }}
+              lg={3}
+              md={6}
+              xs={6}
+              className="p-4"
+            >
+              <Card
+                style={{ background: "none" }}
+                className="bg-transparent border-0"
+              >
                 <Card.Img variant="top rounded-lg" src={Feedback1} />
-                <Card.Body className="text-center">
-                  <span>
+                <Card.Body
+                  style={{ background: "none" }}
+                  className="text-center"
+                >
+                  <span style={{ background: "none" }}>
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -734,7 +754,7 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text>
+                  <Card.Text style={{ background: "none" }}>
                     It was an great experience with Onor expert. Highly recommed
                     them
                   </Card.Text>
@@ -742,11 +762,23 @@ let Homepage = (props) => {
               </Card>
             </Col>
 
-            <Col lg={3} md={6} xs={6} className="p-4">
-              <Card className="bg-transparent border-0">
+            <Col
+              style={{ background: "none" }}
+              lg={3}
+              md={6}
+              xs={6}
+              className="p-4"
+            >
+              <Card
+                style={{ background: "none" }}
+                className="bg-transparent border-0"
+              >
                 <Card.Img variant="top rounded-lg" src={Feedback2} />
-                <Card.Body className="text-center">
-                  <span>
+                <Card.Body
+                  style={{ background: "none" }}
+                  className="text-center"
+                >
+                  <span style={{ background: "none" }}>
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -754,7 +786,7 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text>
+                  <Card.Text style={{ background: "none" }}>
                     It was an great experience with Onor expert. Highly recommed
                     them
                   </Card.Text>
@@ -762,11 +794,23 @@ let Homepage = (props) => {
               </Card>
             </Col>
 
-            <Col lg={3} md={6} xs={6} className="p-4">
-              <Card className="bg-transparent border-0">
+            <Col
+              style={{ background: "none" }}
+              lg={3}
+              md={6}
+              xs={6}
+              className="p-4"
+            >
+              <Card
+                style={{ background: "none" }}
+                className="bg-transparent border-0"
+              >
                 <Card.Img variant="top rounded-lg" src={Feedback3} />
-                <Card.Body className="text-center">
-                  <span>
+                <Card.Body
+                  style={{ background: "none" }}
+                  className="text-center"
+                >
+                  <span style={{ background: "none" }}>
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -774,7 +818,7 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text>
+                  <Card.Text style={{ background: "none" }}>
                     It was an great experience with Onor expert. Highly recommed
                     them
                   </Card.Text>
@@ -782,11 +826,23 @@ let Homepage = (props) => {
               </Card>
             </Col>
 
-            <Col lg={3} md={6} xs={6} className="p-4">
-              <Card className="bg-transparent border-0">
+            <Col
+              style={{ background: "none" }}
+              lg={3}
+              md={6}
+              xs={6}
+              className="p-4"
+            >
+              <Card
+                style={{ background: "none" }}
+                className="bg-transparent border-0"
+              >
                 <Card.Img variant="top rounded-lg" src={Feedback4} />
-                <Card.Body className="text-center">
-                  <span>
+                <Card.Body
+                  style={{ background: "none" }}
+                  className="text-center"
+                >
+                  <span style={{ background: "none" }}>
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -794,7 +850,7 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text>
+                  <Card.Text style={{ background: "none" }}>
                     It was an great experience with Onor expert. Highly recommed
                     them
                   </Card.Text>
@@ -811,25 +867,39 @@ let Homepage = (props) => {
           paddingBottom: "80px",
         }}
       >
-        <Container>
-          <Row className="justify-content-center align-items-center">
-            <Col lg={3} xs={4}>
+        <Container style={{ background: "none" }}>
+          <Row
+            style={{ background: "none" }}
+            className="justify-content-center align-items-center"
+          >
+            <Col style={{ background: "none" }} lg={3} xs={4}>
               <img
                 src={Wade}
                 className="testimonial-image"
                 alt=""
-                style={{ borderRadius: "50%" }}
+                style={{ borderRadius: "50%", backgroud: "none" }}
               />
             </Col>
             <Col>
               <Row>
-                <Col xs={12} lg={2} className="font-weight-bold">
+                <Col
+                  xs={12}
+                  lg={2}
+                  className="font-weight-bold"
+                  style={{ background: "none" }}
+                >
                   Wade Warren
                 </Col>
-                <Col xs={12} lg={9} className="text-left">
+                <Col
+                  style={{ background: "none" }}
+                  xs={12}
+                  lg={9}
+                  className="text-left"
+                >
                   <span
                     style={{
                       color: "#F6AF25",
+                      background: "none",
                     }}
                   >
                     <i class="fa fa-star"></i>
@@ -844,8 +914,16 @@ let Homepage = (props) => {
                 </Col>
               </Row>
               <Row lg={9} xs={12}>
-                <Col className="mt-2 d-none d-lg-block d-xs-block">
-                  <span style={{ color: "#000" }}>
+                <Col
+                  style={{ background: "none" }}
+                  className="mt-2 d-none d-lg-block d-xs-block"
+                >
+                  <span
+                    style={{
+                      color: "#000",
+                      background: "none",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Pulvinar enim diam tortor feugiat massa. A ultricies feugiat
                     diam consectetur blandit turpis id egestas est. Lorem ipsum
@@ -865,16 +943,16 @@ let Homepage = (props) => {
               </Col>
             </Row>
           </Row>
-          <Row className="text-right">
-            <Col lg={12}>
+          <Row style={{ background: "none" }} className="text-right">
+            <Col style={{ background: "none" }} lg={12}>
               <button className="testimonial-button">
                 View our review wall{" "}
                 <FiArrowRight style={{ fontSize: "18px" }} />
               </button>
             </Col>
           </Row>
-          <Col className="mt-4">
-            <h1 className="makeup-tip-text">
+          <Col style={{ background: "none" }} className="mt-4">
+            <h1 style={{ background: "none" }} className="makeup-tip-text">
               Want to Get similar top quality makeup tips and suggestions?
             </h1>
             <span>

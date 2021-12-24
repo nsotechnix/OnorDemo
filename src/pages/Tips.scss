@@ -1,9 +1,84 @@
-.beauty_container {
-  background-color: rgba(241, 90, 37, 0.04);
+.btn-1 {
+  height: 45px;
+  width: 163px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 8px;
+  background-color: #FFF;
 }
 
-.tab {
-  justify-content: center;
+.btn-1:focus {
+  height: 45px;
+  width: 163px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 8px;
+  background-color: #FFD6C9;
+}
+
+.btn-2 {
+  height: 45px;
+  width: 229px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+
+.btn-2:focus {
+  height: 45px;
+  width: 229px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 8px;
+  background-color: #FFD6C9;
+}
+
+
+.btn-3 {
+  height: 45px;
+  width: 194px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+
+.btn-3:focus {
+  height: 45px;
+  width: 194px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 8px;
+  background-color: #FFD6C9;
+}
+
+.beauty_container {
+  background-color: rgba(241, 90, 37, 0.04);
 }
 
 .card_body {

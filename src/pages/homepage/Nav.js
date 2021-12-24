@@ -124,7 +124,7 @@ const NavComponent = (props) => {
   return (
     <>
       <Navbar
-        className={"mt-0 pr-md-5 fixed-top shadow bg-white"}
+        className={"mt-0 pr-md-5 fixed-top shadow-sm bg-white"}
         collapseOnSelect
         expand="lg"
       >
@@ -180,7 +180,7 @@ const NavComponent = (props) => {
                 eventKey="1"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/")}
-                style={{ fontSize: '18px', fontWeight: '700' }}
+                style={{ fontSize: '16px', fontWeight: '700', fontFamily: 'Inter' }}
               >
                 Home
               </Nav.Link>
@@ -190,7 +190,7 @@ const NavComponent = (props) => {
                 eventKey="1"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/why-onor")}
-                style={{ fontSize: '18px' }}
+                style={{ fontSize: '16px', fontFamily: 'Inter' }}
               >
                 Why Onor
               </Nav.Link>
@@ -200,7 +200,7 @@ const NavComponent = (props) => {
                 eventKey="2"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/testimonials")}
-                style={{ fontSize: '18px' }}
+                style={{ fontSize: '16px', fontFamily: 'Inter' }}
               >
                 Testimonials
               </Nav.Link>
@@ -210,7 +210,7 @@ const NavComponent = (props) => {
                 eventKey="2"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/news-and-hacks")}
-                style={{ fontSize: '18px' }}
+                style={{ fontSize: '16px', fontFamily: 'Inter' }}
               >
                 News
               </Nav.Link>
@@ -226,9 +226,9 @@ const NavComponent = (props) => {
                 eventKey="4"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/about")}
-                style={{ fontSize: '18px' }}
+                style={{ fontSize: '16px', fontFamily: 'Inter' }}
               >
-                About Onor
+                About us
               </Nav.Link>
             </Nav.Item>
             {props.auth.isAuthorized ? (
@@ -428,25 +428,25 @@ const NavComponent = (props) => {
               </>
             )}
           </Nav>
-          <Nav>
-            <Nav.Item className={"px-3 mt-md-2 mb-2 mb-sm-0"}>
+          <Nav className="nav-buttons">
+            <Nav.Item className={"px-1 mt-md-2 mb-2 mb-sm-0"}>
               <Nav.Link
                 eventKey="5"
                 className={"text-light rounded text-center text-uppercase"}
-                style={{ backgroundColor: '#EA5B28', padding: "7px 35px" }}
+                style={{ backgroundColor: '#EA5B28', fontFamily: 'Inter', padding: "7px 30px" }}
                 onClick={(e) => props.history.push("/signin" + params)}
               >
-                Login
+                SIGNUP
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className={"px-3 mt-md-2"}>
+            <Nav.Item className={"px-1 mt-md-2"}>
               <Nav.Link
                 eventKey="6"
                 className={"bg-dark text-light text-center rounded text-uppercase"}
                 onClick={(e) => props.history.push("/signup" + params)}
-                style={{ padding: "7px 35px" }}
+                style={{ padding: "7px 30px", fontFamily: 'Inter', }}
               >
-                Sign up
+                LOGIN
               </Nav.Link>
             </Nav.Item>
           </Nav>

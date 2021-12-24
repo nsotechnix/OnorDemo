@@ -11,7 +11,7 @@ import "./Footerr.css";
 
 function Footerr() {
   return (
-    <Container fluid style={{ backgroundColor: "black" }}>
+    <Container fluid className="footer_conatiner">
       <Row>
         <Col md={1}>
           <img className="footer_2_logo" src={Logo} />

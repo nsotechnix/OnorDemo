@@ -1,11 +1,12 @@
 .why-onor-header {
-  font-size: 30px;
+  font-size: 43px;
   font-weight: 700;
 }
 
 .why-onor-img {
-  height: 100%;
-  width: 100%;
+  margin-top: -55px;
+  height: 110%;
+  width: 110%;
 }
 
 .why-onor-icon {
@@ -22,5 +23,11 @@
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+  }
+
+  .why-onor-img {
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
   }
 }
