@@ -64,7 +64,7 @@ function Cons() {
             </Col>
             <Col xs={10} className="why-onor-text">
               Very nominal or lower cost - less than
-              <span style={{ color: "#EA5B28" }}>50-60%</span> from regular
+              <span style={{ color: "#EA5B28" }}> 50-60%</span> from regular
               saloon
             </Col>
           </Row>

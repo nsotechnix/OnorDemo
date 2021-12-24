@@ -441,6 +441,11 @@ let Homepage = (props) => {
           <Container className="slider-margin-top">
             <Row className={"text-center slider-button-top"}>
               <Col>
+                <p className="slider-makeup-text">
+                  Not sure about your skin
+                  <br />
+                  tone and your makeup?
+                </p>
                 <button
                   onClick={(e) =>
                     window.open(
@@ -451,7 +456,7 @@ let Homepage = (props) => {
                   className={
                     "mt-2 btn btn-dark makeup-upload-button-slider makeup-upload-button-slider-display"
                   }
-                  style={{ fontSize: "18px" }}
+                  style={{ fontSize: "18px", backgroundColor: "#000000" }}
                 >
                   Book a free live consult{" "}
                   <BsArrowUpCircle
@@ -654,11 +659,12 @@ let Homepage = (props) => {
                       src={Arrow}
                     />
                   </Col>
-                  <Col lg={3} className={"text-center"}>
+                  <Col lg={4} className={"text-center"}>
                     <img className={"help-round-image-2"} src={Analyze} />
                     <br />
                     <span class={"help-round-image-text-2-a"}>
-                      Onor Experts + AI gives custom recommendations
+                      Onor Experts + AI gives
+                      <br /> custom recommendations
                     </span>
                   </Col>
                   <Col lg={1} className={"arrow-mobile"}>

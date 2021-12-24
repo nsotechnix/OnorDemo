@@ -801,10 +801,19 @@
 
   .help-round-image {
     border-radius: 50%;
-    height: 4em;
-    width: 4em;
+    height: 10em;
+    width: 10em;
     margin-top: 15px;
     filter: grayscale(0%);
+  }
+
+  .help-round-image-text {
+    font-family: "Inter";
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 10px;
+    line-height: 18px;
   }
 
   .arrow-mobile {
@@ -836,9 +845,24 @@
 
   .help-round-image-2 {
     border-radius: 50%;
-    height: 5em;
-    width: 5em;
+    height: 10em;
+    width: 10em;
     margin-top: 15px;
+  }
+
+  .help-round-image-text-2 {
+    font-family: "Inter";
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .help-round-image-text-2-a {
+    font-family: "Inter";
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
   }
 
   .upload-btn {
