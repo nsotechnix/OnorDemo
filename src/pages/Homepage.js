@@ -569,7 +569,7 @@ let Homepage = (props) => {
                     style={{
                       padding: "11px 50px",
                       marginLeft: "20px",
-                      fontSize: "14px",
+                      fontSize: "18px",
                       boxShadow: "7px 6px 0px rgba(0, 0, 0, 0.12)",
                       borderRadius: "4px",
                       height: "64px",
@@ -701,7 +701,7 @@ let Homepage = (props) => {
                     "mt-2 mt-lg-5 mb-0 mb-lg-3 btn btn-dark makeup-upload-button"
                   }
                   style={{
-                    fontSize: "14px",
+                    fontSize: "18px",
                     fontFamily: "Inter",
                     backgroundColor: "#000000",
                     fontWeight: "700",
@@ -965,7 +965,7 @@ let Homepage = (props) => {
               <button class={"makeup-tip-button"}>
                 Book a free live session{" "}
                 <BiVideo
-                  style={{ backgroundColor: "transparent", fontSize: "25px" }}
+                  style={{ backgroundColor: "transparent", fontSize: "18px",fontFamily:"Inter" }}
                 />
                 <span className="material-icons"></span>
               </button>
@@ -981,7 +981,7 @@ let Homepage = (props) => {
               >
                 Upload your Photos{" "}
                 <BsArrowUpCircle
-                  style={{ backgroundColor: "transparent", fontSize: "20px" }}
+                  style={{ backgroundColor: "transparent", fontSize: "18px" ,fontFamily:"Inter" }}
                 />
               </button>
             </span>
