@@ -8,10 +8,11 @@
   outline: none;
   color: #000;
   border-radius: 8px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-.btn-1:focus {
+.btn-1:focus,
+.btn-1:active {
   height: 45px;
   width: 163px;
   margin-right: 10px;
@@ -21,7 +22,7 @@
   outline: none;
   color: #000;
   border-radius: 8px;
-  background-color: #FFD6C9;
+  background-color: #ffd6c9;
 }
 
 .btn-2 {
@@ -34,10 +35,11 @@
   outline: none;
   color: #000;
   border-radius: 8px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-.btn-2:focus {
+.btn-2:focus,
+.btn-2:active {
   height: 45px;
   width: 229px;
   margin-right: 10px;
@@ -47,9 +49,8 @@
   outline: none;
   color: #000;
   border-radius: 8px;
-  background-color: #FFD6C9;
+  background-color: #ffd6c9;
 }
-
 
 .btn-3 {
   height: 45px;
@@ -61,10 +62,11 @@
   outline: none;
   color: #000;
   border-radius: 8px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-.btn-3:focus {
+.btn-3:focus,
+.btn-3:active {
   height: 45px;
   width: 194px;
   margin-right: 10px;
@@ -74,7 +76,7 @@
   outline: none;
   color: #000;
   border-radius: 8px;
-  background-color: #FFD6C9;
+  background-color: #ffd6c9;
 }
 
 .beauty_container {
@@ -117,15 +119,11 @@
   border-radius: 10px;
 }
 
-
-
 .mytabs {
   color: #000 !important;
   font-family: "Inter";
-  background-color: #FFD6C9;
-
+  background-color: #ffd6c9;
 }
-
 
 @media screen and (max-width: 600px) {
   .card_body {
