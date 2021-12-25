@@ -4,6 +4,10 @@
   src: url(../styles/fonts/ClashDisplay-Light.ttf);
 }
 @font-face {
+  font-family: "Clash Display Medium";
+  src: url(../styles/fonts/ClashDisplay-Medium.ttf);
+}
+@font-face {
   font-family: "Clash Display";
   src: url(../styles/fonts/ClashDisplay-Regular.ttf);
 }
@@ -57,12 +61,14 @@
 }
 
 .main-sub-header {
-  font-family: "Clash Display Bold" !important;
-  font-size: 60px;
+  font-family: "Clash Display Medium" !important;
+  font-size: 70px;
   margin-left: 100px;
+  line-height: 82px;
 }
 
 .header-text {
+  color: #3d3d3d;
   font-family: "Inter";
   margin-left: 100px;
   font-size: 16px;
@@ -93,6 +99,7 @@
   margin-left: 100px;
   font-size: 16px;
   text-align: left;
+  color: #3d3d3d;
 }
 
 .header-review {
@@ -108,10 +115,11 @@
 
 .slider-text {
   font-family: "Inter";
-  font-weight: bold;
+  font-weight: 400;
   font-size: 16px;
   margin-left: 60px;
   margin-top: 15px;
+  color: GRAY;
 }
 
 .slider-button-top {
@@ -150,32 +158,32 @@
 .help-round-image {
   text-align: left;
   border-radius: 50%;
-  height: 5em;
-  width: 5em;
+  height: 7em;
+  width: 7em;
   margin-top: 15px;
   filter: grayscale(100%);
 }
 
 .help-round-image-2 {
   border-radius: 50%;
-  height: 5em;
-  width: 5em;
+  height: 7em;
+  width: 7em;
   margin-top: 15px;
 }
 
 .help-round-image-text {
   font-family: "Inter";
-  color: #000;
-  font-weight: 700;
-  font-size: 12px;
+  color: #333333;
+  font-weight: bolder;
+  font-size: 14px;
   line-height: 18px;
 }
 
 .help-round-image-text-2 {
   font-family: "Inter";
-  color: #000;
-  font-weight: 700;
-  font-size: 12px;
+  color: #333333;
+  font-weight: bolder;
+  font-size: 14px;
   line-height: 15px;
 }
 .help-round-image-text-2-a {
@@ -462,8 +470,8 @@
   text-transform: uppercase;
 }
 .text-trans {
-  font-family: "Clash Display Bold" !important;
-  font-weight: 700;
+  font-family: "Clash Display Medium" !important;
+  font-weight: 400;
 }
 .link-j1:hover {
   color: #fff !important;
@@ -523,9 +531,10 @@
   margin-top: 50px;
   font-family: "Inter";
   font-size: 16px;
+  color: #3d3d3d;
 }
 .section-5-header-2 {
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: "Inter Bold";
   font-style: normal;
   font-size: 44px;
@@ -710,7 +719,7 @@
   .slide-text-center {
     font-weight: bold;
     justify-content: center;
-    font-family: "Clash Display Bold";
+    font-family: "Clash Display Medium";
   }
 
   .header-text {

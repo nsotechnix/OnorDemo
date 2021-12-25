@@ -88,9 +88,9 @@ const settings = {
   fontFamily: "Clash Display Bold",
 };
 const TEXTS = [
-  "Social Media",
+  "Social media",
   "Shows & Reels",
-  "Parties & Events",
+  "Parties&Events",
   "Yourself",
   "WORLD",
 ];
@@ -330,16 +330,24 @@ let Homepage = (props) => {
                     ></span>
                     <span
                       style={{
+                        fontFamily: "Fira sans",
+                        fontSize: "18px",
                         marginLeft: "5px",
-                        fontWeight: "bold",
+                        fontWeight: "700",
                         color: "black",
+                        lineHeight: "22px",
                       }}
                     >
                       4.9
                     </span>
                     <span
                       style={{
-                        marginLeft: "10px",
+                        fontFamily: "Fira sans",
+                        fontSize: "18px",
+                        marginLeft: "5px",
+                        fontWeight: "400",
+                        color: "black",
+                        lineHeight: "22px",
                         color: "gray",
                       }}
                     >
@@ -522,7 +530,7 @@ let Homepage = (props) => {
                     <img
                       style={{
                         marginTop: "-35px",
-                        marginLeft: "-10px",
+                        marginLeft: "-8px",
                         height: "1.5em",
                         width: "2em",
                         filter: "grayscale(100%)",
@@ -735,7 +743,7 @@ let Homepage = (props) => {
           <h1 className={"section-5-header-2"}>
             We're strong believers in the power of word-of-mouth{" "}
           </h1>
-          <Row style={{ background: "none" }} className="mt-5">
+          <Row style={{ background: "none" }} className="mt-2">
             <Col
               style={{ background: "none" }}
               lg={3}
@@ -752,7 +760,13 @@ let Homepage = (props) => {
                   style={{ background: "none" }}
                   className="text-center"
                 >
-                  <span style={{ background: "none" }}>
+                  <span
+                    style={{
+                      background: "none",
+                      fontFamily: "Fira Sans",
+                      fontWeight: "bold",
+                    }}
+                  >
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -784,7 +798,13 @@ let Homepage = (props) => {
                   style={{ background: "none" }}
                   className="text-center"
                 >
-                  <span style={{ background: "none" }}>
+                  <span
+                    style={{
+                      background: "none",
+                      fontFamily: "Fira Sans",
+                      fontWeight: "bold",
+                    }}
+                  >
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -816,7 +836,13 @@ let Homepage = (props) => {
                   style={{ background: "none" }}
                   className="text-center"
                 >
-                  <span style={{ background: "none" }}>
+                  <span
+                    style={{
+                      background: "none",
+                      fontFamily: "Fira Sans",
+                      fontWeight: "bold",
+                    }}
+                  >
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -848,7 +874,13 @@ let Homepage = (props) => {
                   style={{ background: "none" }}
                   className="text-center"
                 >
-                  <span style={{ background: "none" }}>
+                  <span
+                    style={{
+                      background: "none",
+                      fontFamily: "Fira Sans",
+                      fontWeight: "bold",
+                    }}
+                  >
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
@@ -965,7 +997,11 @@ let Homepage = (props) => {
               <button class={"makeup-tip-button"}>
                 Book a free live session{" "}
                 <BiVideo
-                  style={{ backgroundColor: "transparent", fontSize: "18px",fontFamily:"Inter" }}
+                  style={{
+                    backgroundColor: "transparent",
+                    fontSize: "18px",
+                    fontFamily: "Inter",
+                  }}
                 />
                 <span className="material-icons"></span>
               </button>
@@ -981,7 +1017,11 @@ let Homepage = (props) => {
               >
                 Upload your Photos{" "}
                 <BsArrowUpCircle
-                  style={{ backgroundColor: "transparent", fontSize: "18px" ,fontFamily:"Inter" }}
+                  style={{
+                    backgroundColor: "transparent",
+                    fontSize: "18px",
+                    fontFamily: "Inter",
+                  }}
                 />
               </button>
             </span>

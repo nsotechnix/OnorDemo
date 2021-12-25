@@ -3,8 +3,8 @@
 }
 
 .footer_2_logo {
-  width: 120px;
-  height: 60px;
+  width: 140px;
+  height: 70px;
   margin-left: 5px;
   margin-top: 10px;
 }
@@ -16,19 +16,28 @@
   text-align: left;
   display: flex;
 }
+.footer_link_about {
+  margin-top: 5px;
+  color: #dfdfdf;
+  padding-left: 35px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Inter";
+}
 .footer_link {
   margin-top: 5px;
-  color: white;
+  color: #dfdfdf;
   padding-left: 30px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Inter";
 }
 .social_icons {
   color: white;
   margin-left: 25px;
-  font-size: 30px;
-  margin-top: 15px;
+  font-size: 22px;
+  margin-top: 25px;
+  font-weight: bold;
 }
 .footer_icon {
   color: white;
@@ -38,21 +47,25 @@
 .footer_icon_text {
   font-size: 14px;
   margin-left: 10px;
-  color: #d4d4d4;
+  color: #e9e9e9;
   font-family: "Inter";
 }
 .footer_text {
   margin-left: 20px;
-  color: #dfdfdf;
+  color: rgba(223, 223, 223, 0.5);
 }
 .footer_text_rights {
   font-size: 14px;
-  color: #d4d4d4;
+  color: rgba(223, 223, 223, 0.5);
+  text-align: right;
 }
 .social_icons_mobile {
   display: none;
 }
 @media only screen and (max-width: 600px) {
+  .footer_link_about {
+    font-size: 14px;
+  }
   .footer_link {
     font-size: 14px;
   }

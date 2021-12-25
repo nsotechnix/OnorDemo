@@ -17,7 +17,7 @@ function Footerr() {
           <img className="footer_2_logo" src={Logo} />
         </Col>
         <Col className="link_column" style={{ marginTop: "35px" }} md={9}>
-          <p className="footer_link">About us</p>
+          <p className="footer_link_about">About us</p>
           <p className="footer_link">Review</p>
           <p className="footer_link">Hacks & Tips</p>
           <p className="footer_link">Contact Us</p>
@@ -42,13 +42,13 @@ function Footerr() {
           <FaTwitter className="social_icons_mobile" />
           <FaInstagram className="social_icons_mobile" />
         </Col>
-        <Col style={{ display: "flex", marginBottom: "40px" }} md={10}>
+        <Col style={{ display: "flex", marginBottom: "40px" }} md={9}>
           <p className="footer_text">Privacy Policy </p>
           <p className="footer_text"> Terms & Conditions</p>
           <p className="footer_text"> Conduct & Dispute resolution</p>
         </Col>
 
-        <Col md={2}>
+        <Col md={3}>
           <p className="footer_text_rights">
             &copy;2021 ONOR |All Rights Reserved
           </p>

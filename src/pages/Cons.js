@@ -18,51 +18,51 @@ function Cons() {
         </Col>
         <Col lg={6}>
           <Row className="mt-5 align-items-center">
-            <Col xs={2}>
+            <Col xs={1}>
               <RiTimerFill className="why-onor-icon" />
             </Col>
-            <Col xs={10} className="why-onor-text">
+            <Col xs={11} className="why-onor-text">
               {" "}
               Instant makeup
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col xs={2}>
+            <Col xs={1}>
               <HiLightBulb className="why-onor-icon" />{" "}
             </Col>
-            <Col xs={10} className="why-onor-text">
+            <Col xs={11} className="why-onor-text">
               Instant beauty tips
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col xs={2}>
+            <Col xs={1}>
               <IoClipboard className="why-onor-icon" />{" "}
             </Col>
-            <Col xs={10} className="why-onor-text">
+            <Col xs={11} className="why-onor-text">
               Reviews and Recommendations for products
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col xs={2}>
+            <Col xs={1}>
               <IoSettingsSharp className="why-onor-icon" />{" "}
             </Col>
-            <Col xs={10} className="why-onor-text">
+            <Col xs={11} className="why-onor-text">
               Expert and AI based suggestions for your skin color
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col xs={2}>
+            <Col xs={1}>
               <IoGlobeSharp className="why-onor-icon" />{" "}
             </Col>
-            <Col xs={10} className="why-onor-text">
+            <Col xs={11} className="why-onor-text">
               Do it from anywhere
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col xs={2}>
+            <Col xs={1}>
               <AiFillDollarCircle className="why-onor-icon" />{" "}
             </Col>
-            <Col xs={10} className="why-onor-text">
+            <Col xs={11} className="why-onor-text">
               Very nominal or lower cost - less than
               <span style={{ color: "#EA5B28" }}> 50-60%</span> from regular
               saloon
