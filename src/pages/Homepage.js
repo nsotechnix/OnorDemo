@@ -794,7 +794,7 @@ let Homepage = (props) => {
                       truncateText="…"
                       text="She taught me how to do beautiful everyday soft glam look! She taught me how to do makeup more flattering for my eyeshape, how to get full coverage foundation,how to contour properly and many more usefull tips!"
                       textTruncateChild={
-                        <a href={"/#/testimonials"}>Read on</a>
+                        <a href={"/#/testimonials"}>Read more</a>
                       }
                     ></TextTruncate>
                   </Card.Text>
@@ -845,7 +845,7 @@ let Homepage = (props) => {
                       truncateText="…"
                       text="I was so excited we just did eye-makeup and it is just great!Kisten advised me abou so many good things to do,how to apply product which i have already and which product I could get.Now I know how to put my eyelashes, I did it wrong all time!"
                       textTruncateChild={
-                        <a href={"/#/testimonials"}>Read on</a>
+                        <a href={"/#/testimonials"}>Read more</a>
                       }
                     />
                   </Card.Text>
@@ -896,7 +896,7 @@ let Homepage = (props) => {
                       truncateText="…"
                       text="Awesome..! I had a lot of people who loved my eyes during my live and TikToks that day(after the Onor Session)."
                       textTruncateChild={
-                        <a href={"/#/testimonials"}>Read on</a>
+                        <a href={"/#/testimonials"}>Read more</a>
                       }
                     />
                   </Card.Text>
@@ -947,7 +947,7 @@ let Homepage = (props) => {
                       truncateText="…"
                       text="It was great! The Makeup Artist showed me some really cool stuff & guided me to achieve my best looks. i will recommend... Great going guys.."
                       textTruncateChild={
-                        <a href={"/#/testimonials"}>Read on</a>
+                        <a href={"/#/testimonials"}>Read more</a>
                       }
                     />
                   </Card.Text>
@@ -1034,7 +1034,7 @@ let Homepage = (props) => {
                       learned a lot. Artist was very helpful & guided me to
                       achieve my looks. Great Company. Thank You!"
                       textTruncateChild={
-                        <a href={"/#/testimonials"}>Read on</a>
+                        <a href={"/#/testimonials"}>Read more</a>
                       }
                     ></TextTruncate>
                   </span>
