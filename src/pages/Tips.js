@@ -31,27 +31,57 @@ function Tips() {
 
         <Row>
           <Col className="text-center text-sm-left">
-            <button
-              className="btn-1 active"
-              onClick={makeup}
-              style={{ fontFamily: "Inter" }}
-            >
-              Make up Hacks
-            </button>
-            <button
-              className="btn-2"
-              onClick={brushes}
-              style={{ fontFamily: "Inter" }}
-            >
-              Brushes you must have
-            </button>{" "}
-            <button
-              className="btn-3"
-              onClick={eye}
-              style={{ fontFamily: "Inter" }}
-            >
-              Eye makeup hacks
-            </button>
+            {state == 1 ? (
+              <button
+                className="btn-1-active"
+                onClick={makeup}
+                style={{ fontFamily: "Inter" }}
+              >
+                Make up Hacks
+              </button>
+            ) : (
+              <button
+                className="btn-1"
+                onClick={makeup}
+                style={{ fontFamily: "Inter" }}
+              >
+                Make up Hacks
+              </button>
+            )}
+            {state == 2 ? (
+              <button
+                className="btn-2-active"
+                onClick={brushes}
+                style={{ fontFamily: "Inter" }}
+              >
+                Brushes you must have
+              </button>
+            ) : (
+              <button
+                className="btn-2"
+                onClick={brushes}
+                style={{ fontFamily: "Inter" }}
+              >
+                Brushes you must have
+              </button>
+            )}
+            {state == 3 ? (
+              <button
+                className="btn-3-active"
+                onClick={eye}
+                style={{ fontFamily: "Inter" }}
+              >
+                Eye makeup hacks
+              </button>
+            ) : (
+              <button
+                className="btn-3"
+                onClick={eye}
+                style={{ fontFamily: "Inter" }}
+              >
+                Eye makeup hacks
+              </button>
+            )}
           </Col>
         </Row>
         {state === 1 ? (
