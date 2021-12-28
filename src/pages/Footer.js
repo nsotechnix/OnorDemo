@@ -10,7 +10,7 @@ function Footer() {
       <Row>
         <Col className="footer_parent" md={12}>
           <h1 className="footer_text_heading_1">
-            Lets glow your skin and give you perfect make up
+            What’re you waiting for? Sit back, relax & try now!
           </h1>
           <Col className="btn_class_footer">
             <button className="button-orange">

@@ -79,6 +79,7 @@ import Tips from "./Tips";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 import Footerr from "./Footerr";
+import TextTruncate from "react-text-truncate";
 const settings = {
   centerMode: true,
   infinite: true,
@@ -468,7 +469,10 @@ let Homepage = (props) => {
                 >
                   Book a free live consult{" "}
                   <BsArrowUpCircle
-                    style={{ backgroundColor: "transparent", fontSize: "20px" }}
+                    style={{
+                      backgroundColor: "transparent",
+                      fontSize: "20px",
+                    }}
                   />
                 </button>
               </Col>
@@ -717,7 +721,10 @@ let Homepage = (props) => {
                 >
                   Upload your Photos{" "}
                   <BsArrowUpCircle
-                    style={{ backgroundColor: "transparent", fontSize: "20px" }}
+                    style={{
+                      backgroundColor: "transparent",
+                      fontSize: "20px",
+                    }}
                   />
                 </button>
               </Container>
@@ -739,9 +746,9 @@ let Homepage = (props) => {
       )}
       <Container className={"section-5-container pb-5"} fluid>
         <Container style={{ background: "none" }}>
-          <h2 className={"section-5-header"}>1800+ happy customers</h2>
+          <h2 className={"section-5-header"}>100's of Happy Customers</h2>
           <h1 className={"section-5-header-2"}>
-            We're strong believers in the power of word-of-mouth{" "}
+            Hear it from folks who availed the Onor Makeup Experience{" "}
           </h1>
           <Row style={{ background: "none" }} className="mt-2">
             <Col
@@ -774,9 +781,22 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text style={{ background: "none" }}>
-                    It was an great experience with Onor expert. Highly recommed
-                    them
+                  <Card.Text
+                    style={{
+                      background: "none",
+                      fontSize: "14px",
+                      color: "#3D3D3D",
+                    }}
+                  >
+                    <TextTruncate
+                      line={3}
+                      element="span"
+                      truncateText="…"
+                      text="She taught me how to do beautiful everyday soft glam look! She taught me how to do makeup more flattering for my eyeshape, how to get full coverage foundation,how to contour properly and many more usefull tips!"
+                      textTruncateChild={
+                        <a href={"/#/testimonials"}>Read on</a>
+                      }
+                    ></TextTruncate>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -812,9 +832,22 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text style={{ background: "none" }}>
-                    It was an great experience with Onor expert. Highly recommed
-                    them
+                  <Card.Text
+                    style={{
+                      background: "none",
+                      fontSize: "14px",
+                      color: "#3D3D3D",
+                    }}
+                  >
+                    <TextTruncate
+                      line={3}
+                      element="span"
+                      truncateText="…"
+                      text="I was so excited we just did eye-makeup and it is just great!Kisten advised me abou so many good things to do,how to apply product which i have already and which product I could get.Now I know how to put my eyelashes, I did it wrong all time!"
+                      textTruncateChild={
+                        <a href={"/#/testimonials"}>Read on</a>
+                      }
+                    />
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -850,9 +883,22 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text style={{ background: "none" }}>
-                    It was an great experience with Onor expert. Highly recommed
-                    them
+                  <Card.Text
+                    style={{
+                      background: "none",
+                      fontSize: "14px",
+                      color: "#3D3D3D",
+                    }}
+                  >
+                    <TextTruncate
+                      line={3}
+                      element="span"
+                      truncateText="…"
+                      text="Awesome..! I had a lot of people who loved my eyes during my live and TikToks that day(after the Onor Session)."
+                      textTruncateChild={
+                        <a href={"/#/testimonials"}>Read on</a>
+                      }
+                    />
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -888,9 +934,22 @@ let Homepage = (props) => {
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
-                  <Card.Text style={{ background: "none" }}>
-                    It was an great experience with Onor expert. Highly recommed
-                    them
+                  <Card.Text
+                    style={{
+                      background: "none",
+                      fontSize: "14px",
+                      color: "#3D3D3D",
+                    }}
+                  >
+                    <TextTruncate
+                      line={3}
+                      element="span"
+                      truncateText="…"
+                      text="It was great! The Makeup Artist showed me some really cool stuff & guided me to achieve my best looks. i will recommend... Great going guys.."
+                      textTruncateChild={
+                        <a href={"/#/testimonials"}>Read on</a>
+                      }
+                    />
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -898,6 +957,7 @@ let Homepage = (props) => {
           </Row>
         </Container>
       </Container>
+
       <Container
         fluid
         style={{
@@ -922,11 +982,11 @@ let Homepage = (props) => {
               <Row>
                 <Col
                   xs={12}
-                  lg={2}
+                  lg={4}
                   className="font-weight-bold"
                   style={{ background: "none" }}
                 >
-                  Wade Warren
+                  Chelsea Bennett
                 </Col>
                 <Col
                   style={{ background: "none" }}
@@ -960,24 +1020,34 @@ let Homepage = (props) => {
                     style={{
                       color: "#000",
                       background: "none",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pulvinar enim diam tortor feugiat massa. A ultricies feugiat
-                    diam consectetur blandit turpis id egestas est. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Pulvinar enim
-                    diam tortor feugiat massa.
+                    <TextTruncate
+                      line={2}
+                      element="span"
+                      truncateText="…"
+                      text="I loved the Virtual consult and being able to ask specific
+                      questions. It's a very unique opportunity. Your whole team
+                      was amazing & provided me a very new opportunity & I
+                      learned a lot. Artist was very helpful & guided me to
+                      achieve my looks. Great Company. Thank You!"
+                      textTruncateChild={
+                        <a href={"/#/testimonials"}>Read on</a>
+                      }
+                    ></TextTruncate>
                   </span>
                 </Col>
               </Row>
             </Col>
             <Row lg={9} xs={12} className="d-block px-3 py-2 d-lg-none">
               <Col>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pulvinar enim diam tortor feugiat massa. A ultricies feugiat
-                diam consectetur blandit turpis id egestas est. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Pulvinar enim diam
-                tortor feugiat massa.
+                I loved the Virtual consult and being able to ask specific
+                questions. It's a very unique opportunity. Your whole team was
+                amazing & provided me a very new opportunity & I learned a lot.
+                Artist was very helpful & guided me to achieve my looks. Great
+                Company. Thank You!
               </Col>
             </Row>
           </Row>

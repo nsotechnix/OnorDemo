@@ -13,17 +13,17 @@ function Cons() {
       <Row style={{ marginTop: "140px" }}>
         <Col lg={12}>
           <h1 className="why-onor-header" style={{ fontFamily: "Inter" }}>
-            Why you should choose onorworld
+            Few more reasons to get you started
           </h1>
         </Col>
         <Col lg={6}>
-          <Row className="mt-5 align-items-center">
+          <Row className="mt-4 align-items-center">
             <Col xs={1}>
-              <RiTimerFill className="why-onor-icon" />
+              <AiFillDollarCircle className="why-onor-icon" />
             </Col>
             <Col xs={11} className="why-onor-text">
               {" "}
-              Instant makeup
+              Click Connect to an expert – instant solutions to your questions
             </Col>
           </Row>
           <Row className="mt-3">
@@ -31,7 +31,7 @@ function Cons() {
               <HiLightBulb className="why-onor-icon" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
-              Instant beauty tips
+              Best Experts trained to provide a superlative experience
             </Col>
           </Row>
           <Row className="mt-3">
@@ -39,7 +39,7 @@ function Cons() {
               <IoClipboard className="why-onor-icon" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
-              Reviews and Recommendations for products
+              60% economical than a salon & delivers better results
             </Col>
           </Row>
           <Row className="mt-3">
@@ -47,7 +47,7 @@ function Cons() {
               <IoSettingsSharp className="why-onor-icon" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
-              Expert and AI based suggestions for your skin color
+              Round-the-clock service at your convenience
             </Col>
           </Row>
           <Row className="mt-3">
@@ -55,17 +55,7 @@ function Cons() {
               <IoGlobeSharp className="why-onor-icon" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
-              Do it from anywhere
-            </Col>
-          </Row>
-          <Row className="mt-3">
-            <Col xs={1}>
-              <AiFillDollarCircle className="why-onor-icon" />{" "}
-            </Col>
-            <Col xs={11} className="why-onor-text">
-              Very nominal or lower cost - less than
-              <span style={{ color: "#EA5B28" }}> 50-60%</span> from regular
-              saloon
+              Each session customized to what you want
             </Col>
           </Row>
         </Col>
