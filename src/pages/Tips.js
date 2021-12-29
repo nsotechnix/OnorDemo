@@ -382,37 +382,6 @@ function Tips() {
           <Row className=" card_size" style={{ marginTop: "40px" }}>
             <Col md={4} lg={4} xs={12} className="mb-5 text-center">
               <h5 classname="text-center" style={{ fontFamily: "Inter" }}>
-                Powder Your Lashes
-              </h5>
-              <Card className="border-0 mt-4">
-                <Card.Body
-                  xs={12}
-                  className={"card_body "}
-                  style={{ borderRadius: "8px" }}
-                >
-                  <HiLightBulb className={"card_bulb"} />
-                  {/* <Card.Text
-                    className="font-italic"
-                    style={{ fontWeight: "700" }}
-                  >
-                    CIDESCO3
-                  </Card.Text> */}
-                  <Card.Text style={{ color: "gray" }}>
-                    The key to fluffier and fuller lashes - a little translucent
-                    powder. After your first coat of mascara, dust your lashes
-                    with a mild coat of loose powder. Add another coat of
-                    mascara to hide the dustiness, and you will see the
-                    difference for yourself.
-                  </Card.Text>
-                  <Card.Text>
-                    Share <FaCloudsmith />
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4} lg={4} xs={12} className="mb-5 text-center">
-              <h5 classname="text-center" style={{ fontFamily: "Inter" }}>
                 Apply Concealer in Triangle
               </h5>
               <Card className="border-0 mt-4">
