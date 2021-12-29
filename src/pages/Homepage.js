@@ -91,9 +91,10 @@ const settings = {
 const TEXTS = [
   "Social media",
   "Shows & Reels",
-  "Parties&Events",
+  "Parties",
+  "Events",
   "Yourself",
-  "WORLD",
+  "Your World",
 ];
 
 const responsive = {
@@ -428,11 +429,11 @@ let Homepage = (props) => {
           <Row className={"mt-5 mx-md-5"}>
             <Col xs={12}>
               <h1 className={"slider-header"}>
-                A search bar is a drag Just talk to an expert
+                A search bar is a drag. Just talk to an expert!
               </h1>
               <p className={"slider-text"}>
                 Onor’s certified makeup gurus offers custom recommendation for
-                YOUR needs! Anytime. Anywhere
+                YOUR needs! Anytime Anywhere.
               </p>
               {/* <img
                 src={Challenge}
@@ -984,12 +985,12 @@ let Homepage = (props) => {
                   xs={12}
                   lg={4}
                   className="font-weight-bold"
-                  style={{ background: "none" }}
+                  style={{ background: "none", marginLeft: "-20px" }}
                 >
                   Chelsea Bennett
                 </Col>
                 <Col
-                  style={{ background: "none" }}
+                  style={{ background: "none", marginLeft: "-20px" }}
                   xs={12}
                   lg={9}
                   className="text-left"
@@ -1013,7 +1014,7 @@ let Homepage = (props) => {
               </Row>
               <Row lg={9} xs={12}>
                 <Col
-                  style={{ background: "none" }}
+                  style={{ background: "none", marginLeft: "-20px" }}
                   className="mt-2 d-none d-lg-block d-xs-block"
                 >
                   <span
@@ -1034,7 +1035,12 @@ let Homepage = (props) => {
                       learned a lot. Artist was very helpful & guided me to
                       achieve my looks. Great Company. Thank You!"
                       textTruncateChild={
-                        <a href={"/#/testimonials"}>Read more</a>
+                        <a
+                          style={{ color: "#ea5b28 !important" }}
+                          href={"/#/testimonials"}
+                        >
+                          Read more
+                        </a>
                       }
                     ></TextTruncate>
                   </span>

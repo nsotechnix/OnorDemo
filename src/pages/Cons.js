@@ -6,6 +6,7 @@ import { RiTimerFill } from "react-icons/ri";
 import ConsImg from "../images/choose_onor.png";
 import "./Cons.css";
 import { Container, Row, Col } from "react-bootstrap";
+import expert from "../svg/expert.svg";
 
 function Cons() {
   return (
@@ -19,16 +20,17 @@ function Cons() {
         <Col lg={6}>
           <Row className="mt-4 align-items-center">
             <Col xs={1}>
-              <AiFillDollarCircle className="why-onor-icon" />
+              <RiTimerFill className="why-onor-icon" />
             </Col>
             <Col xs={11} className="why-onor-text">
               {" "}
-              Click Connect to an expert – instant solutions to your questions
+              One Click Connect to an expert – instant solutions to your
+              questions
             </Col>
           </Row>
           <Row className="mt-3">
             <Col xs={1}>
-              <HiLightBulb className="why-onor-icon" />{" "}
+              <img src={expert} className="why-onor-icon-svg" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
               Best Experts trained to provide a superlative experience
@@ -36,7 +38,7 @@ function Cons() {
           </Row>
           <Row className="mt-3">
             <Col xs={1}>
-              <IoClipboard className="why-onor-icon" />{" "}
+              <AiFillDollarCircle className="why-onor-icon" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
               60% economical than a salon & delivers better results
@@ -44,7 +46,7 @@ function Cons() {
           </Row>
           <Row className="mt-3">
             <Col xs={1}>
-              <IoSettingsSharp className="why-onor-icon" />{" "}
+              <IoGlobeSharp className="why-onor-icon" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
               Round-the-clock service at your convenience
@@ -52,7 +54,7 @@ function Cons() {
           </Row>
           <Row className="mt-3">
             <Col xs={1}>
-              <IoGlobeSharp className="why-onor-icon" />{" "}
+              <HiLightBulb className="why-onor-icon" />{" "}
             </Col>
             <Col xs={11} className="why-onor-text">
               Each session customized to what you want
