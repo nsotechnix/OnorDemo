@@ -28,7 +28,7 @@ function Feedbacks() {
       >
         <Card
           style={{
-            width: "250px",
+            width: "200px",
             alignItems: "center",
             backgroundColor: "transparent",
           }}
@@ -37,7 +37,6 @@ function Feedbacks() {
           <Card.Img
             variant="top"
             style={{
-              width: "240px",
               borderRadius: "10px",
             }}
             src={exp1}
@@ -105,7 +104,7 @@ function Feedbacks() {
 
         <Card
           style={{
-            width: "250px",
+            width: "200px",
             alignItems: "center",
             backgroundColor: "transparent",
           }}
@@ -114,8 +113,6 @@ function Feedbacks() {
           <Card.Img
             variant="top"
             style={{
-              width: "240px",
-              height: "285px",
               borderRadius: "10px",
             }}
             src={exp2}
@@ -183,7 +180,7 @@ function Feedbacks() {
 
         <Card
           style={{
-            width: "250px",
+            width: "200px",
             alignItems: "center",
             backgroundColor: "transparent",
           }}
@@ -192,8 +189,6 @@ function Feedbacks() {
           <Card.Img
             variant="top"
             style={{
-              width: "240px",
-              height: "285px",
               borderRadius: "10px",
             }}
             src={exp3}
@@ -261,7 +256,7 @@ function Feedbacks() {
 
         <Card
           style={{
-            width: "250px",
+            width: "200px",
             alignItems: "center",
             backgroundColor: "transparent",
           }}
@@ -270,8 +265,6 @@ function Feedbacks() {
           <Card.Img
             variant="top"
             style={{
-              width: "240px",
-              height: "285px",
               borderRadius: "10px",
             }}
             src={exp4}
@@ -339,7 +332,7 @@ function Feedbacks() {
 
         <Card
           style={{
-            width: "250px",
+            width: "200px",
             alignItems: "center",
             backgroundColor: "transparent",
           }}
@@ -348,8 +341,6 @@ function Feedbacks() {
           <Card.Img
             variant="top"
             style={{
-              width: "240px",
-              height: "285px",
               borderRadius: "10px",
             }}
             src={exp5}
@@ -417,7 +408,7 @@ function Feedbacks() {
 
         <Card
           style={{
-            width: "250px",
+            width: "200px",
             alignItems: "center",
             backgroundColor: "transparent",
           }}
@@ -426,8 +417,6 @@ function Feedbacks() {
           <Card.Img
             variant="top"
             style={{
-              width: "240px",
-              height: "285px",
               borderRadius: "10px",
             }}
             src={exp6}
@@ -486,7 +475,7 @@ function Feedbacks() {
 
         <Card
           style={{
-            width: "250px",
+            width: "200px",
             alignItems: "center",
             backgroundColor: "transparent",
           }}
@@ -495,8 +484,6 @@ function Feedbacks() {
           <Card.Img
             variant="top"
             style={{
-              width: "240px",
-              height: "285px",
               borderRadius: "10px",
             }}
             src={exp7}
