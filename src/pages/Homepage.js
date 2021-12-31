@@ -765,7 +765,7 @@ let Homepage = (props) => {
               >
                 <Card.Img variant="top rounded-lg" src={Feedback1} />
                 <Card.Body
-                  style={{ background: "none" }}
+                  style={{ background: "none", borderRadius: "10px" }}
                   className="text-center"
                 >
                   <span

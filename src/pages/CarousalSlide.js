@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from 'swiper';
+import { Autoplay } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/pagination/pagination.min.css";
@@ -24,15 +24,14 @@ import SwiperCore, {
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 export default function Slider() {
-
-  SwiperCore.use([Autoplay])
+  SwiperCore.use([Autoplay]);
   return (
     <div className="containerSlider">
       <Swiper
         navigation={false}
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false
+          disableOnInteraction: false,
         }}
         effect={"coverflow"}
         centeredSlides={true}
