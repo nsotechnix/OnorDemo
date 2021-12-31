@@ -370,8 +370,9 @@ function FAQ() {
               style={{ fontFamily: "Inter" }}
             >
               Certainly. We’re open for everyone, no matter the gender. We are
-              extremely LGBTQ friendly and in fact have ongoing promotions for
-              our brave friends who are trying out makeup for the first time.
+              also extremely LGBTQ friendly and in fact have ongoing promotions
+              for our brave friends who are trying out makeup for the first
+              time.
             </AccordionPanel>
           </AccordionItem>
         </Accordion>

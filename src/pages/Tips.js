@@ -429,7 +429,7 @@ function Tips() {
                     CIDESCO
                   </Card.Text> */}
                   <Card.Text style={{ color: "gray" }}>
-                    Everyone's eyes are different - learn the simlest ways to
+                    Everyone's eyes are different - learn the simplest ways to
                     apply eyeliner to outline your eyes and make them stand out.
                   </Card.Text>
                   <Card.Text>
@@ -486,7 +486,7 @@ function Tips() {
                   </Card.Text> */}
                   <Card.Text style={{ color: "gray" }}>
                     As you apply your falsies hold a mirror below your line of
-                    sight and look down into it - you will find it mush easier
+                    sight and look down into it - you will find it much easier
                     to apply the strip at the edge of the lash line.
                   </Card.Text>
                   <Card.Text>
@@ -540,12 +540,7 @@ function Tips() {
           <br /> other hacks and tips
         </p>
         <button
-          onClick={(e) =>
-            window.open(
-              "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
-              "_blank"
-            )
-          }
+          onClick={(e) => window.open("/#/news-and-hacks")}
           className={
             "mt-2 mt-lg-5 mb-0 mb-lg-3 btn btn-dark makeup-upload-button-tips"
           }

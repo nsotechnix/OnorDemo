@@ -239,8 +239,9 @@
 }
 
 .slider-makeup-text {
-  font-weight: 700;
+  font-family: "Inter";
   font-size: 24px;
+  margin-top: -60px;
 }
 
 .makeup-upload-button {
@@ -883,6 +884,8 @@
 
   .slider-makeup-text {
     font-weight: normal;
+    font-size: 14px;
+    margin-top: 10px;
   }
 
   .slider-margin-top {

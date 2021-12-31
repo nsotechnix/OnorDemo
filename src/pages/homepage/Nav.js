@@ -69,8 +69,8 @@ const NavComponent = (props) => {
       JSON.stringify(
         jwt.decode(localStorage.getItem("sellerJwtToken")).avatar
       ) == ""
-      ? dummyUser
-      : JSON.stringify(jwt.decode(localStorage.getItem("sellerJwtToken")).avatar);
+    ? dummyUser
+    : JSON.stringify(jwt.decode(localStorage.getItem("sellerJwtToken")).avatar);
 
   // console.log(JSON.stringify(jwt.decode(localStorage.getItem('jwtToken')).avatar))
   const handleSignInAsSeller = async () => {
@@ -145,9 +145,7 @@ const NavComponent = (props) => {
           className="navbar-toggler-css"
           style={{ outline: "none", border: "none" }}
         >
-          <img className="logo-rotate"
-            src={dummyIcon}
-          />
+          <img className="logo-rotate" src={dummyIcon} />
         </Navbar.Toggle>
         <Navbar.Collapse
           id="responsive-navbar-nav"
@@ -180,7 +178,11 @@ const NavComponent = (props) => {
                 eventKey="1"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/")}
-                style={{ fontSize: '16px', fontWeight: '700', fontFamily: 'Inter' }}
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "700",
+                  fontFamily: "Inter",
+                }}
               >
                 Home
               </Nav.Link>
@@ -190,7 +192,7 @@ const NavComponent = (props) => {
                 eventKey="1"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/why-onor")}
-                style={{ fontSize: '16px', fontFamily: 'Inter' }}
+                style={{ fontSize: "16px", fontFamily: "Inter" }}
               >
                 Why Onor
               </Nav.Link>
@@ -200,7 +202,7 @@ const NavComponent = (props) => {
                 eventKey="2"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/testimonials")}
-                style={{ fontSize: '16px', fontFamily: 'Inter' }}
+                style={{ fontSize: "16px", fontFamily: "Inter" }}
               >
                 Testimonials
               </Nav.Link>
@@ -210,7 +212,7 @@ const NavComponent = (props) => {
                 eventKey="2"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/news-and-hacks")}
-                style={{ fontSize: '16px', fontFamily: 'Inter' }}
+                style={{ fontSize: "16px", fontFamily: "Inter" }}
               >
                 News
               </Nav.Link>
@@ -226,7 +228,7 @@ const NavComponent = (props) => {
                 eventKey="4"
                 className={"text-dark"}
                 onClick={(e) => props.history.push("/about")}
-                style={{ fontSize: '16px', fontFamily: 'Inter' }}
+                style={{ fontSize: "16px", fontFamily: "Inter" }}
               >
                 About us
               </Nav.Link>
@@ -433,8 +435,12 @@ const NavComponent = (props) => {
               <Nav.Link
                 eventKey="5"
                 className={"text-light rounded text-center text-uppercase"}
-                style={{ backgroundColor: '#EA5B28', fontFamily: 'Inter', padding: "7px 30px" }}
-                onClick={(e) => props.history.push("/signin" + params)}
+                style={{
+                  backgroundColor: "#EA5B28",
+                  fontFamily: "Inter",
+                  padding: "7px 30px",
+                }}
+                onClick={(e) => props.history.push("/signup" + params)}
               >
                 SIGNUP
               </Nav.Link>
@@ -442,9 +448,11 @@ const NavComponent = (props) => {
             <Nav.Item className={"px-1 mt-md-2"}>
               <Nav.Link
                 eventKey="6"
-                className={"bg-dark text-light text-center rounded text-uppercase"}
-                onClick={(e) => props.history.push("/signup" + params)}
-                style={{ padding: "7px 30px", fontFamily: 'Inter', }}
+                className={
+                  "bg-dark text-light text-center rounded text-uppercase"
+                }
+                onClick={(e) => props.history.push("/signin" + params)}
+                style={{ padding: "7px 30px", fontFamily: "Inter" }}
               >
                 LOGIN
               </Nav.Link>

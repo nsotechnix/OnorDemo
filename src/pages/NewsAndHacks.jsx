@@ -94,7 +94,7 @@ export default function News() {
             placeholder="Search News & Hacks.."
           />
         </Col> */}
-        <Col sm={12} style={{ textAlign: "left", marginTop: "10px" }}>
+        <Col sm={12} style={{ textAlign: "left", marginTop: "80px" }}>
           <h1 style={{ fontSize: "18px", fontWeight: "bold" }}>
             Onor-Our{" "}
             <span className="design-text" style={{ color: "tomato" }}>

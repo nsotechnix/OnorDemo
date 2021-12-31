@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -9,7 +9,7 @@ import { GoMail } from "react-icons/go";
 import Logo from "../images/onorlogo_white.png";
 import "./Footerr.css";
 
-function Footerr() {
+function Footerr(props) {
   return (
     <Container fluid className="footer_conatiner">
       <Row>
@@ -17,9 +17,19 @@ function Footerr() {
           <img className="footer_2_logo" src={Logo} />
         </Col>
         <Col className="link_column" style={{ marginTop: "35px" }} md={9}>
-          <p className="footer_link_about">About us</p>
-          <p className="footer_link">Review</p>
-          <p className="footer_link">Hacks & Tips</p>
+          {" "}
+          <a href="/#/about">
+            {" "}
+            <p className="footer_link_about">About us</p>
+          </a>
+          <a href="/#/testimonials">
+            {" "}
+            <p className="footer_link">Review</p>
+          </a>
+          <a href="/#/news-and-hacks">
+            {" "}
+            <p className="footer_link">Hacks & Tips</p>
+          </a>
           <p className="footer_link">Contact Us</p>
         </Col>
         <Col md={2}>

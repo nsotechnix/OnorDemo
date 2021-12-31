@@ -80,6 +80,9 @@ import FAQ from "./FAQ";
 import Footer from "./Footer";
 import Footerr from "./Footerr";
 import TextTruncate from "react-text-truncate";
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 const settings = {
   centerMode: true,
   infinite: true,
@@ -246,6 +249,200 @@ let Homepage = (props) => {
     );
     return () => clearTimeout(intervalId);
   }, []);
+  const [modalShow, setModalShow] = useState(false);
+
+  function MyVerticallyCenteredModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Body className="px-3 py-2">
+          <h5 style={{ fontFamily: "Inter" }}>
+            {" "}
+            <img src={SearchIcon} /> Photo Submission for Facial Analysis
+          </h5>
+          <Form className="mt-4">
+            <Row>
+              <Col md={2}>
+                <h5 style={{ fontFamily: "Inter" }}>Name</h5>
+              </Col>
+              <Col md={10}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Control
+                    type="text"
+                    style={{
+                      border: "1px solid #EA5B28",
+                      borderRadius: "0px",
+                      fontFamily: "Inter",
+                    }}
+                    placeholder="Enter name"
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={2}>
+                <h5 style={{ fontFamily: "Inter" }}>Email</h5>
+              </Col>
+              <Col md={10}>
+                <Form>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control
+                      type="email"
+                      style={{
+                        border: "1px solid #EA5B28",
+                        borderRadius: "0px",
+                        fontFamily: "Inter",
+                      }}
+                      placeholder="Enter email"
+                    />
+                  </Form.Group>
+                </Form>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={2}>
+                <h5 style={{ fontFamily: "Inter" }}>Phone</h5>
+              </Col>
+              <Col md={10}>
+                <Form>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control
+                      type="text"
+                      style={{
+                        border: "1px solid #EA5B28",
+                        borderRadius: "0px",
+                        fontFamily: "Inter",
+                      }}
+                      placeholder="Enter phone"
+                    />
+                  </Form.Group>
+                </Form>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={2}></Col>
+              <Col md={10}>
+                <Form>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label style={{ fontFamily: "Inter" }}>
+                      What are your makeup goals?
+                    </Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      style={{
+                        border: "1px solid #EA5B28",
+                        borderRadius: "0px",
+                        fontFamily: "Inter",
+                      }}
+                      rows="4"
+                      placeholder="Tell us about the look you want to accomplish, challenge you have or reason you want a makeup evaluation"
+                    />
+                  </Form.Group>
+                </Form>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={2}></Col>
+              <Col md={10}>
+                <p style={{ fontFamily: "Inter" }}>
+                  Submit three pics of your face
+                </p>
+                <Row>
+                  <Col md="4">
+                    <div
+                      style={{
+                        height: "100px",
+                        padding: "5px 5px",
+                        marginBottom: "5px",
+                        width: "100%",
+                        border: "1px solid red",
+                      }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                      style={{
+                        height: "100px",
+                        padding: "5px 5px",
+                        marginBottom: "5px",
+                        width: "100%",
+                        border: "1px solid red",
+                      }}
+                    ></div>
+                  </Col>
+                  <Col md="4">
+                    <div
+                      style={{
+                        height: "100px",
+                        padding: "5px 5px",
+                        marginBottom: "5px",
+                        width: "100%",
+                        border: "1px solid red",
+                      }}
+                    ></div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={2}></Col>
+              <Col md={10}>
+                <Form.Group
+                  className="mb-3"
+                  style={{ fontFamily: "Inter" }}
+                  controlId="formBasicCheckbox"
+                >
+                  <Form.Check
+                    type="checkbox"
+                    label={
+                      <div>
+                        <span>I accept the the </span>
+                        <Link to={"/terms"}>Terms and Conditions</Link>
+                        <span> of Onor Services LLC.</span>
+                      </div>
+                    }
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="text-right">
+                <Button
+                  onClick={props.onHide}
+                  variant="secondary"
+                  style={{
+                    backgroundColor: "red",
+                    border: "none",
+                    borderRadius: "0px",
+                    padding: "10px 40px",
+                    marginRight: "10px",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  Close
+                </Button>
+                <Button
+                  style={{
+                    backgroundColor: "#000",
+                    border: "none",
+                    borderRadius: "0px",
+                    padding: "10px 40px",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  Submit
+                </Button>
+              </Col>
+            </Row>
+          </Form>
+        </Modal.Body>
+      </Modal>
+    );
+  }
 
   return (
     <Fragment>
@@ -295,7 +492,15 @@ let Homepage = (props) => {
                   Personalized makeup session to get you ready for life
                 </p>
                 <span className={"booking-btn-up"}>
-                  <button class={"header-book-button"}>
+                  <button
+                    onClick={(e) =>
+                      window.open(
+                        "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
+                        "_blank"
+                      )
+                    }
+                    class={"header-book-button"}
+                  >
                     Book a free live consult{" "}
                     <BiVideo
                       style={{
@@ -373,13 +578,20 @@ let Homepage = (props) => {
               style={{ margin: "0 16px 0 16px" }}
               className={"booking-btn"}
             >
-              <button class={"header-book-button"}>
+              <button
+                onclick={() => setModalShow(true)}
+                class={"header-book-button"}
+              >
                 Book a free live consult{" "}
                 <BiVideo
                   style={{ backgroundColor: "transparent", fontSize: "25px" }}
                 />
                 <span className="material-icons"></span>
               </button>
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
               <p className="header-question">
                 1:1 expert consult to analyze your skin & <br /> make customized
                 recommendations
@@ -433,7 +645,7 @@ let Homepage = (props) => {
               </h1>
               <p className={"slider-text"}>
                 Onor’s certified makeup gurus offers custom recommendation for
-                YOUR needs! Anytime Anywhere.
+                YOUR needs! Anytime. Anywhere.
               </p>
               {/* <img
                 src={Challenge}
@@ -452,17 +664,12 @@ let Homepage = (props) => {
             <Row className={"text-center slider-button-top"}>
               <Col>
                 <p className="slider-makeup-text">
-                  Not sure about your skin
+                  What's right look for you? The right shade? The right brushes?
                   <br />
-                  tone and your makeup?
+                  Need help re-creating a filter IRL? Or help figuring it out
+                  all
                 </p>
                 <button
-                  onClick={(e) =>
-                    window.open(
-                      "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
-                      "_blank"
-                    )
-                  }
                   className={
                     "mt-2 btn btn-dark makeup-upload-button-slider makeup-upload-button-slider-display"
                   }
@@ -768,6 +975,16 @@ let Homepage = (props) => {
                   style={{ background: "none", borderRadius: "10px" }}
                   className="text-center"
                 >
+                  <Card.Text
+                    className="font-weight-bold"
+                    style={{
+                      fontFamily: "Inter",
+                      fontSize: "18px",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    Valerie
+                  </Card.Text>
                   <span
                     style={{
                       background: "none",
@@ -778,7 +995,7 @@ let Homepage = (props) => {
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
-                        <FaStar color="#F6AF25" />
+                        <FaStar style={{ marginTop: "-5px" }} color="#F6AF25" />
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
@@ -793,7 +1010,7 @@ let Homepage = (props) => {
                       line={3}
                       element="span"
                       truncateText="…"
-                      text="She taught me how to do beautiful everyday soft glam look! She taught me how to do makeup more flattering for my eyeshape, how to get full coverage foundation,how to contour properly and many more usefull tips!"
+                      text="I was so excited we just did eye-makeup and it is just great!Kisten advised me abou so many good things to do,how to apply product which i have already and which product I could get.Now I know how to put my eyelashes, I did it wrong all time!"
                       textTruncateChild={
                         <a href={"/#/testimonials"}>Read more</a>
                       }
@@ -819,6 +1036,16 @@ let Homepage = (props) => {
                   style={{ background: "none" }}
                   className="text-center"
                 >
+                  <Card.Text
+                    className="font-weight-bold"
+                    style={{
+                      fontFamily: "Inter",
+                      fontSize: "18px",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    Daria Mudrova
+                  </Card.Text>
                   <span
                     style={{
                       background: "none",
@@ -829,9 +1056,12 @@ let Homepage = (props) => {
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
-                        <FaStar color="#F6AF25" />
+                        <FaStar style={{ marginTop: "-5px" }} color="#F6AF25" />
                       ))}
-                    <text className="text-dark"> 5.0</text>
+                    <text style={{ marginTop: "10px" }} className="text-dark">
+                      {" "}
+                      5.0
+                    </text>
                   </span>
                   <Card.Text
                     style={{
@@ -844,7 +1074,7 @@ let Homepage = (props) => {
                       line={3}
                       element="span"
                       truncateText="…"
-                      text="I was so excited we just did eye-makeup and it is just great!Kisten advised me abou so many good things to do,how to apply product which i have already and which product I could get.Now I know how to put my eyelashes, I did it wrong all time!"
+                      text="She taught me how to do beautiful everyday soft glam look! She taught me how to do makeup more flattering for my eyeshape, how to get full coverage foundation,how to contour properly and many more usefull tips!"
                       textTruncateChild={
                         <a href={"/#/testimonials"}>Read more</a>
                       }
@@ -870,6 +1100,16 @@ let Homepage = (props) => {
                   style={{ background: "none" }}
                   className="text-center"
                 >
+                  <Card.Text
+                    className="font-weight-bold"
+                    style={{
+                      fontFamily: "Inter",
+                      fontSize: "18px",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    Alyssa Eckstein
+                  </Card.Text>
                   <span
                     style={{
                       background: "none",
@@ -880,7 +1120,7 @@ let Homepage = (props) => {
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
-                        <FaStar color="#F6AF25" />
+                        <FaStar style={{ marginTop: "-5px" }} color="#F6AF25" />
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
@@ -921,6 +1161,16 @@ let Homepage = (props) => {
                   style={{ background: "none" }}
                   className="text-center"
                 >
+                  <Card.Text
+                    className="font-weight-bold"
+                    style={{
+                      fontFamily: "Inter",
+                      fontSize: "18px",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    Shavan Fulton
+                  </Card.Text>
                   <span
                     style={{
                       background: "none",
@@ -931,7 +1181,7 @@ let Homepage = (props) => {
                     {Array(5)
                       .fill("")
                       .map((_, i) => (
-                        <FaStar color="#F6AF25" />
+                        <FaStar style={{ marginTop: "-5px" }} color="#F6AF25" />
                       ))}
                     <text className="text-dark"> 5.0</text>
                   </span>
@@ -1006,7 +1256,7 @@ let Homepage = (props) => {
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <span>
+                    <span style={{ fontFamily: "Fira Sans" }}>
                       <b className="text-dark"> 4.9</b>
                     </span>
                   </span>
@@ -1059,7 +1309,10 @@ let Homepage = (props) => {
           </Row>
           <Row style={{ background: "none" }} className="text-right">
             <Col style={{ background: "none" }} lg={12}>
-              <button className="testimonial-button">
+              <button
+                className="testimonial-button"
+                onClick={(e) => window.open("/#/testimonials")}
+              >
                 View our review wall{" "}
                 <FiArrowRight style={{ fontSize: "18px" }} />
               </button>
@@ -1070,7 +1323,15 @@ let Homepage = (props) => {
               Want to Get similar top quality makeup tips and suggestions?
             </h1>
             <span>
-              <button class={"makeup-tip-button"}>
+              <button
+                onClick={(e) =>
+                  window.open(
+                    "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
+                    "_blank"
+                  )
+                }
+                class={"makeup-tip-button"}
+              >
                 Book a free live session{" "}
                 <BiVideo
                   style={{
