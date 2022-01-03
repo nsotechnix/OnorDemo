@@ -578,20 +578,13 @@ let Homepage = (props) => {
               style={{ margin: "0 16px 0 16px" }}
               className={"booking-btn"}
             >
-              <button
-                onclick={() => setModalShow(true)}
-                class={"header-book-button"}
-              >
+              <button class={"header-book-button"}>
                 Book a free live consult{" "}
                 <BiVideo
                   style={{ backgroundColor: "transparent", fontSize: "25px" }}
                 />
                 <span className="material-icons"></span>
               </button>
-              <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-              />
               <p className="header-question">
                 1:1 expert consult to analyze your skin & <br /> make customized
                 recommendations
@@ -666,8 +659,8 @@ let Homepage = (props) => {
                 <p className="slider-makeup-text">
                   What's right look for you? The right shade? The right brushes?
                   <br />
-                  Need help re-creating a filter IRL? Or help figuring it out
-                  all
+                  Need help re-creating a filter IRL? Or help figuring it all
+                  out?
                 </p>
                 <button
                   className={
@@ -911,12 +904,7 @@ let Homepage = (props) => {
               </Container>
               <Container className={"upload-btn"}>
                 <button
-                  onClick={(e) =>
-                    window.open(
-                      "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
-                      "_blank"
-                    )
-                  }
+                  onClick={() => setModalShow(true)}
                   className={
                     "mt-2 mt-lg-5 mb-0 mb-lg-3 btn btn-dark makeup-upload-button"
                   }
@@ -935,6 +923,10 @@ let Homepage = (props) => {
                     }}
                   />
                 </button>
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
               </Container>
             </Col>
             <Col md={6} xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
@@ -1234,7 +1226,7 @@ let Homepage = (props) => {
                 <Col
                   xs={12}
                   lg={4}
-                  className="font-weight-bold"
+                  className="chelsea"
                   style={{ background: "none", marginLeft: "-20px" }}
                 >
                   Chelsea Bennett
@@ -1343,12 +1335,7 @@ let Homepage = (props) => {
                 <span className="material-icons"></span>
               </button>
               <button
-                onClick={(e) =>
-                  window.open(
-                    "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
-                    "_blank"
-                  )
-                }
+                onClick={() => setModalShow(true)}
                 className={"makeup-tip-button-dark"}
                 style={{ fontSize: "18px" }}
               >
