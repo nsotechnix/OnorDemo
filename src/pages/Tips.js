@@ -514,8 +514,8 @@ function Tips() {
                     CIDESCO
                   </Card.Text> */}
                   <Card.Text style={{ color: "gray" }}>
-                    If your favourite tuve of mascara is beginning to get a
-                    touch clumpy, add a couple of drops of sterline saline and
+                    If your favourite tube of mascara is beginning to get a
+                    touch clumpy, add a couple of drops of sterile saline and
                     swirl with you brush - it'll add moisture to the mascara's
                     formula and extend its life.
                   </Card.Text>
