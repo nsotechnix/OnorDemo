@@ -242,13 +242,13 @@ let Homepage = (props) => {
     }
   };
   const [index, setIndex] = React.useState(0);
-  useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      2000 // every 3 seconds
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
+  // useEffect(() => {
+  //   const intervalId = setInterval(
+  //     () => setIndex((index) => index + 1),
+  //     2000 // every 3 seconds
+  //   );
+  //   return () => clearTimeout(intervalId);
+  // }, []);
   const [modalShow, setModalShow] = useState(false);
 
   function MyVerticallyCenteredModal(props) {
