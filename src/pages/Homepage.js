@@ -366,7 +366,7 @@ let Homepage = (props) => {
                         style={{
                           height: "100px",
                           padding: "5px 5px",
-                          marginBottom: "5px",
+                          marginBottom: "6px",
                           width: "100%",
                           border: "1px solid red",
                         }}
