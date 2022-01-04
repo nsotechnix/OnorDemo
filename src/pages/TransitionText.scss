@@ -1,0 +1,17 @@
+.main-sub-header {
+  font-family: "Clash Display Medium" !important;
+  font-size: 70px;
+  line-height: 82px;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .main-sub-header {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-sub-header {
+    font-family: "Clash Display Bold";
+    margin-left: 0px;
+  }
+}

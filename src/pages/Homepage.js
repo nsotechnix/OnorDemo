@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState, useRef } from "react";
 import {
   API_FETCH_ALL_CATEGORIES,
   API_FETCH_GIGS,
@@ -83,22 +83,9 @@ import TextTruncate from "react-text-truncate";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-const settings = {
-  centerMode: true,
-  infinite: true,
-  centerPadding: "100px",
-  slidesToShow: 3,
-  speed: 1000,
-  fontFamily: "Clash Display Bold",
-};
-const TEXTS = [
-  "Social media",
-  "Shows & Reels",
-  "Parties",
-  "Events",
-  "Yourself",
-  "Your World",
-];
+import emailjs from "@emailjs/browser";
+import SideColorImage from "../svg/triangle.svg";
+import TransitionText from "./TransitionText";
 
 const responsive = {
   superLargeDesktop: {
@@ -241,207 +228,199 @@ let Homepage = (props) => {
       });
     }
   };
-  const [index, setIndex] = React.useState(0);
 
   const [modalShow, setModalShow] = useState(false);
-  useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      2000 // every 3 seconds
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
 
   function MyVerticallyCenteredModal(props) {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "service_z4mr28n",
+          "template_bb5xf17",
+          form.current,
+          "user_9YPsl5f4o0fi44Sz1zfKy"
+        )
+        .then(
+          () => {
+            // alert.success("Success!")
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      form.current.reset(form);
+      return;
+    };
+
     return (
-      <Modal
-        {...props}
-        size="md"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Body className="px-3 py-2">
-          <h5 style={{ fontFamily: "Inter" }}>
-            {" "}
-            <img src={SearchIcon} /> Photo Submission for Facial Analysis
-          </h5>
-          <Form className="mt-4">
-            <Row>
-              <Col md={2}>
-                <h5 style={{ fontFamily: "Inter" }}>Name</h5>
-              </Col>
-              <Col md={10}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Control
-                    type="text"
+      <div className="container">
+        <Modal
+          Modal
+          {...props}
+          size="md"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+        >
+          <Modal.Body className="px-3 py-2">
+            <h5 style={{ fontFamily: "Inter" }}>
+              {" "}
+              <img src={SideColorImage} /> Photo Submission for Facial Analysis
+            </h5>
+            <form className="mt-4" ref={form} onSubmit={sendEmail}>
+              <Row className="mb-3">
+                <Col md={2}>
+                  <h5 style={{ fontFamily: "Inter" }}>Name</h5>
+                </Col>
+                <Col md={10}>
+                  <input
                     style={{
                       border: "1px solid #EA5B28",
                       borderRadius: "0px",
                       fontFamily: "Inter",
+                      padding: "5px",
                     }}
-                    placeholder="Enter name"
+                    placeholder="Enter your name..."
+                    type="text"
+                    name="from_name"
+                    required
                   />
-                </Form.Group>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={2}>
-                <h5 style={{ fontFamily: "Inter" }}>Email</h5>
-              </Col>
-              <Col md={10}>
-                <Form>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control
-                      type="email"
-                      style={{
-                        border: "1px solid #EA5B28",
-                        borderRadius: "0px",
-                        fontFamily: "Inter",
-                      }}
-                      placeholder="Enter email"
-                    />
-                  </Form.Group>
-                </Form>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={2}>
-                <h5 style={{ fontFamily: "Inter" }}>Phone</h5>
-              </Col>
-              <Col md={10}>
-                <Form>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control
-                      type="text"
-                      style={{
-                        border: "1px solid #EA5B28",
-                        borderRadius: "0px",
-                        fontFamily: "Inter",
-                      }}
-                      placeholder="Enter phone"
-                    />
-                  </Form.Group>
-                </Form>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={2}></Col>
-              <Col md={10}>
-                <Form>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label style={{ fontFamily: "Inter" }}>
-                      What are your makeup goals?
-                    </Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      style={{
-                        border: "1px solid #EA5B28",
-                        borderRadius: "0px",
-                        fontFamily: "Inter",
-                      }}
-                      rows="4"
-                      placeholder="Tell us about the look you want to accomplish, challenge you have or reason you want a makeup evaluation"
-                    />
-                  </Form.Group>
-                </Form>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={2}></Col>
-              <Col md={10}>
-                <p style={{ fontFamily: "Inter" }}>
-                  Submit three pics of your face
-                </p>
-                <Row>
-                  <Col md="4">
-                    <div
-                      style={{
-                        height: "100px",
-                        padding: "5px 5px",
-                        marginBottom: "5px",
-                        width: "100%",
-                        border: "1px solid red",
-                      }}
-                    ></div>
-                  </Col>
-                  <Col md="4">
-                    <div
-                      style={{
-                        height: "100px",
-                        padding: "5px 5px",
-                        marginBottom: "5px",
-                        width: "100%",
-                        border: "1px solid red",
-                      }}
-                    ></div>
-                  </Col>
-                  <Col md="4">
-                    <div
-                      style={{
-                        height: "100px",
-                        padding: "5px 5px",
-                        marginBottom: "5px",
-                        width: "100%",
-                        border: "1px solid red",
-                      }}
-                    ></div>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={2}></Col>
-              <Col md={10}>
-                <Form.Group
-                  className="mb-3"
-                  style={{ fontFamily: "Inter" }}
-                  controlId="formBasicCheckbox"
-                >
-                  <Form.Check
-                    type="checkbox"
-                    label={
-                      <div>
-                        <span>I accept the the </span>
-                        <Link to={"/terms"}>Terms and Conditions</Link>
-                        <span> of Onor Services LLC.</span>
-                      </div>
-                    }
+                </Col>
+              </Row>
+
+              <Row className="mb-3">
+                <Col md={2}>
+                  <h5 style={{ fontFamily: "Inter" }}>Email</h5>
+                </Col>
+                <Col md={10}>
+                  <input
+                    style={{
+                      border: "1px solid #EA5B28",
+                      borderRadius: "0px",
+                      fontFamily: "Inter",
+                      padding: "5px",
+                    }}
+                    placeholder="Enter your email..."
+                    type="email"
+                    name="email"
+                    required
                   />
-                </Form.Group>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="text-right">
-                <Button
-                  onClick={props.onHide}
-                  variant="secondary"
-                  style={{
-                    backgroundColor: "red",
-                    border: "none",
-                    borderRadius: "0px",
-                    padding: "10px 40px",
-                    marginRight: "10px",
-                    fontFamily: "Inter",
-                  }}
-                >
-                  Close
-                </Button>
-                <Button
-                  style={{
-                    backgroundColor: "#000",
-                    border: "none",
-                    borderRadius: "0px",
-                    padding: "10px 40px",
-                    fontFamily: "Inter",
-                  }}
-                >
-                  Submit
-                </Button>
-              </Col>
-            </Row>
-          </Form>
-        </Modal.Body>
-      </Modal>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col md={12}>
+                  <h5 className="mb-3" style={{ fontFamily: "Inter" }}>
+                    What are your makeup goals?
+                  </h5>
+                  <textarea
+                    style={{
+                      border: "1px solid #EA5B28",
+                      borderRadius: "0px",
+                      fontFamily: "Inter",
+                      padding: "5px",
+                      width: "100%",
+                    }}
+                    rows="4"
+                    placeholder="Tell us about the look you want to accomplish, challenge you have or reason you want a makeup evaluation"
+                    name="message"
+                    required
+                  />
+                </Col>
+              </Row>
+
+              <Row>
+                <Col md={12}>
+                  <p style={{ fontFamily: "Inter" }}>
+                    Submit three pics of your face
+                  </p>
+
+                  <Row>
+                    <Col md="4">
+                      <div
+                        style={{
+                          height: "100px",
+                          padding: "5px 5px",
+                          marginBottom: "5px",
+                          width: "100%",
+                          border: "1px solid red",
+                        }}
+                      ></div>
+                    </Col>
+                    <Col md="4">
+                      <div
+                        style={{
+                          height: "100px",
+                          padding: "5px 5px",
+                          marginBottom: "5px",
+                          width: "100%",
+                          border: "1px solid red",
+                        }}
+                      ></div>
+                    </Col>
+                    <Col md="4">
+                      <div
+                        style={{
+                          height: "100px",
+                          padding: "5px 5px",
+                          marginBottom: "5px",
+                          width: "100%",
+                          border: "1px solid red",
+                        }}
+                      ></div>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col md={12}>
+                  <div className="mb-3" style={{ fontFamily: "Inter" }}>
+                    <input type="checkbox" required />
+                    <span> I accept the the </span>
+                    <Link to={"/terms"}>Terms and Conditions</Link>
+                    <span> of Onor Services LLC.</span>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col className="text-right">
+                  <Button
+                    onClick={props.onHide}
+                    variant="secondary"
+                    style={{
+                      backgroundColor: "red",
+                      border: "none",
+                      borderRadius: "0px",
+                      padding: "5px 40px",
+                      marginRight: "5px",
+                      fontFamily: "Inter",
+                    }}
+                  >
+                    Close
+                  </Button>
+                  <Button
+                    type="submit"
+                    style={{
+                      backgroundColor: "#000000",
+                      border: "none",
+                      borderRadius: "0px",
+                      padding: "5px 40px",
+                      fontFamily: "Inter",
+                    }}
+                  >
+                    Submit
+                  </Button>
+                </Col>
+              </Row>
+            </form>
+          </Modal.Body>
+        </Modal>
+      </div>
     );
   }
 
@@ -479,11 +458,7 @@ let Homepage = (props) => {
                 <Col>
                   <Row className="slide-text-center">
                     <h1 className={"main-sub-header"}>
-                      <TextTransition
-                        className="text-trans"
-                        text={TEXTS[index % TEXTS.length]}
-                        springConfig={presets.slow}
-                      />
+                      <TransitionText />
                     </h1>
                   </Row>
                 </Col>
@@ -579,13 +554,22 @@ let Homepage = (props) => {
               style={{ margin: "0 16px 0 16px" }}
               className={"booking-btn"}
             >
-              <button class={"header-book-button"}>
+              <button
+                onclick={() => setModalShow(true)}
+                class={"header-book-button"}
+              >
                 Book a free live consult{" "}
                 <BiVideo
                   style={{ backgroundColor: "transparent", fontSize: "25px" }}
                 />
                 <span className="material-icons"></span>
               </button>
+
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+
               <p className="header-question">
                 1:1 expert consult to analyze your skin & <br /> make customized
                 recommendations
@@ -664,6 +648,12 @@ let Homepage = (props) => {
                   out?
                 </p>
                 <button
+                  onClick={(e) =>
+                    window.open(
+                      "https://calendly.com/onorservices-calendar/consult-a-makeup-maestro",
+                      "_blank"
+                    )
+                  }
                   className={
                     "mt-2 btn btn-dark makeup-upload-button-slider makeup-upload-button-slider-display"
                   }
@@ -924,6 +914,7 @@ let Homepage = (props) => {
                     }}
                   />
                 </button>
+
                 <MyVerticallyCenteredModal
                   show={modalShow}
                   onHide={() => setModalShow(false)}
@@ -1227,7 +1218,7 @@ let Homepage = (props) => {
                 <Col
                   xs={12}
                   lg={4}
-                  className="chelsea"
+                  className="font-weight-bold"
                   style={{ background: "none", marginLeft: "-20px" }}
                 >
                   Chelsea Bennett
@@ -1349,6 +1340,10 @@ let Homepage = (props) => {
                   }}
                 />
               </button>
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
             </span>
           </Col>
         </Container>
@@ -1366,7 +1361,9 @@ let Homepage = (props) => {
       {/* Section 9*/}
       {/* Section 10*/}
       <FAQ />
+      {/* <Provider template={AlertTemplate} {...options}> */}
       <Footer />
+      {/* </Provider> */}
       <Footerr />
       {/* Section 10*/}
 
